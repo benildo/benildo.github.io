@@ -8,20 +8,42 @@
 </head>
 
 <body bgcolor="black" text="lime" link="lime" vlink="green" alink="white">
+<script>
+    function piscaEmail() {
+        var e = document.getElementById("bestview");
+        e.style.visibility =
+            (e.style.visibility === "hidden") ? "visible" : "hidden";
+    }
+    setInterval(piscaEmail, 500);
+</script>
     <center>
+        <br>
+        <br><br>
+        <!-- CONTEÚDO PRINCIPAL -->
         <table border="3" cellpadding="15" cellspacing="0" width="50%">
             <tr>
                 <td>
-                    <h5><b>
+                            <!-- TOPO GEO CITIES -->
+        <marquee behavior="alternate" scrollamount="3">
+            <font size="4" face="Courier New" color="lime">
+                ★★★ Bem-vindo ao meu site pessoal ★★★
+            </font>
+        </marquee>
+
+                    <h5>
+                        <b>
                             <a href="dias.html">[Agenda]</a> -
-                            <a href="https://github.com/benildojr">[benildojr - Github]</a> -
-                            <a href="http://lattes.cnpq.br/7378385288927513">[Curriculum - Lattes]</a> -
+                            <a href="https://github.com/benildojr">[GitHub]</a> -
+                            <a href="http://lattes.cnpq.br/7378385288927513">[Lattes]</a> -
                             <a href="noticias.html">[Noticias]</a>
                         </b>
                     </h5>
+
                     <hr>
-                    <h1>Dev. Benildo Freitas Júnior</h1>
-                    <table align="center" border="1">
+
+                    <h1>Dev. Benildo Freitas</h1>
+
+                    <table align="center" border="1" cellpadding="8">
                         <tr>
                             <td>
                                 <img src="benildo.jpg" width="192" height="144" border="0">
@@ -29,37 +51,73 @@
                             <td>
                                 <h2>Atividade Profissional:</h2>
                                 <p>
-                                    Professor de Educação física<br>
                                     Bacharel em Sistemas de Informação<br>
+                                    Professor de Educação física<br>
                                     Desenvolvedor de Software<br>
                                     Técnico em Eletrônica<br>
-                                    Membro da Equipe de Pesquisa e Desenvolvimento Número 5
+                                    Equipe de Pesquisa e Desenvolvimento Número 5
                                 </p>
                             </td>
                         </tr>
                     </table>
+
                     <h2>Contato</h2>
                     <dl>
                         <dt>Email: benildo@ufrrj.br</dt>
                     </dl>
+
                     <hr>
-                    <div align="center">
-                        <font size="3" face="Courier New">Visitante número:</font><a title="contador de dias"
-                            href="https://www.calendario.cnt.br/ferramentas/contador-de-dias-calculadora-prazo-entre-datas">
-                            <img src="https://contador-gratis.com/contadores-de-visitas/070126122420837.gif"
-                                width="4%"></a>
-                        <br>
-                    </div>
+
+                    <!-- CONTADOR -->
+                    <center>
+                        <table border="5" cellpadding="10" bgcolor="black">
+                            <tr>
+                                <td align="center">
+
+                                    <blink>
+                                        <font size="4" face="Courier New" color="lime">
+                                            !!! VISITANTE !!!
+                                        </font>
+                                    </blink>
+
+                                    <br><br>
+
+                                    <img src="https://contador-gratis.com/contadores-de-visitas/070126122420837.gif"
+                                        width="25%">
+
+                                </td>
+                            </tr>
+                        </table>
+                    </center>
+
                     <br>
+
+                    <!-- RODAPÉ -->
                     <center>
                         <font size="1" face="Courier New">
-                            Hosted on GitHub Pages - Last update: 2026
+                            Hosted on GitHub Pages<br>
+                            Last update: 2026
                         </font>
+                        <br>
+                        <br>
+                            <font id="bestview" size="2" face="Courier New" color="green">
+                                Best viewed in Netscape Navigator
+                            </font>
+                            <img src = "Netscape_icon.svg.png" width="3%">
                     </center>
                 </td>
             </tr>
         </table>
+        <br>
+        
+            <font size="1" face="Courier New" color="green">
+                © 1999–2026
+            </font>
+        
+
     </center>
+
 </body>
+
 
 </html>
