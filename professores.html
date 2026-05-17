@@ -26,7 +26,7 @@
 
                     <hr>
 
-                    <h1>[ SISTEMA DE CONSULTA DE HORÁRIOS ]</h1>
+                    <h1><center>[ SISTEMA DE CONSULTA DE HORÁRIOS 2026 ]</center></h1>
                     
                     <table border="1" cellpadding="8" align="center" width="90%">
                         <tr>
@@ -41,14 +41,11 @@
                     <br>
 
                     <center>
-                        <font face="Courier New" size="3">PROCURAR PROFESSOR:</font><br><br>
-                        <input type="text" id="txtBusca" placeholder="DIGITE O NOME (EX: TIAGO)" disabled 
-                               style="background-color: black; color: lime; border: 2px solid lime; padding: 6px; font-family: 'Courier New'; font-weight: bold; width: 60%; text-transform: uppercase;">
-                        <br><br>
-                        <button id="btnBuscar" disabled 
-                                style="background-color: lime; color: black; border: 1px solid white; padding: 6px 20px; font-family: 'Courier New'; font-weight: bold; cursor: pointer;">
-                            [ EXECUTAR QUERY ]
-                        </button>
+                        <font face="Courier New" size="3">SELECIONE O PROFESSOR:</font><br><br>
+                        <select id="selectProfessor" disabled 
+                                style="background-color: black; color: lime; border: 2px solid lime; padding: 6px; font-family: 'Courier New'; font-weight: bold; width: 75%; font-size: 14px;">
+                            <option value="">[ CARREGANDO LISTA DE DOCENTES... ]</option>
+                        </select>
                     </center>
 
                     <br>
@@ -64,7 +61,7 @@
                         </font>
                         <br><br>
                         <font size="1" face="Courier New">
-                            Engine de Busca Local v1.0 | Last update: 2026
+                            Engine de Busca Local v2.1 | Homonyms Fix
                         </font>
                     </center>
                 </td>
@@ -76,86 +73,206 @@
         </font>
     </center>
 
-    <script>
-        let bdHorarios = [];
+   <script>
+    let bdHorarios = [];
+    let horariosFiltradosAtuais = []; 
 
-        // Fetch automático do JSON do seu servidor GitHub
-        window.addEventListener('DOMContentLoaded', async () => {
-            const statusFnt = document.getElementById('status');
-            const inputBusca = document.getElementById('txtBusca');
-            const btnBuscar = document.getElementById('btnBuscar');
+    window.addEventListener('DOMContentLoaded', async () => {
+        const statusFnt = document.getElementById('status');
+        const selectProf = document.getElementById('selectProfessor');
 
-            try {
-                const response = await fetch('escola.json');
-                if (!response.ok) throw new Error('Arquivo escola.json nao localizado.');
-                
-                bdHorarios = await response.json();
-                
-                statusFnt.color = "lime";
-                statusFnt.innerText = `[ READY ] ${bdHorarios.length} REGISTROS DE HORARIOS CARREGADOS COM SUCESSO!`;
-                
-                inputBusca.disabled = false;
-                btnBuscar.disabled = false;
-                inputBusca.focus();
+        try {
+            const response = await fetch('escola.json');
+            if (!response.ok) throw new Error('Arquivo escola.json nao localizado.');
+            
+            bdHorarios = await response.json();
+            
+            statusFnt.color = "lime";
+            statusFnt.innerText = `[ READY ] ${bdHorarios.length} REGISTROS DE HORARIOS CARREGADOS!`;
+            
+            popularSelect(bdHorarios);
+            selectProf.disabled = false;
 
-            } catch (error) {
-                statusFnt.color = "red";
-                statusFnt.innerText = `[ ERROR ] FALHA NO LINK DATA: ${error.message}`;
+        } catch (error) {
+            statusFnt.color = "red";
+            statusFnt.innerText = `[ ERROR ] FALHA NO LINK DATA: ${error.message}`;
+        }
+    });
+
+    function popularSelect(dados) {
+        const selectProf = document.getElementById('selectProfessor');
+        const mapaProfessores = {};
+
+        dados.forEach(item => {
+            const nome = item.professor ? item.professor.toUpperCase().trim() : "";
+            const matricula = item.matricula_professor ? item.matricula_professor.trim() : "N/A";
+            const disciplina = item.disciplina ? item.disciplina.toUpperCase().trim() : "";
+
+            if (!nome || nome === "A DEFINIR") return;
+
+            const chaveUnica = (matricula !== "N/A" && matricula !== "") ? `${nome}_MAT_${matricula}` : `${nome}_DISC_${disciplina}`;
+
+            if (!mapaProfessores[chaveUnica]) {
+                mapaProfessores[chaveUnica] = {
+                    nome: nome,
+                    matricula: matricula,
+                    disciplinas: new Set(),
+                    registrosOriginais: []
+                };
             }
+            
+            if (disciplina) mapaProfessores[chaveUnica].disciplinas.add(disciplina);
+            mapaProfessores[chaveUnica].registrosOriginais.push(item);
         });
 
-        // Eventos disparadores
-        document.getElementById('btnBuscar').addEventListener('click', pesquisar);
-        document.getElementById('txtBusca').addEventListener('keypress', (e) => { if (e.key === 'Enter') pesquisar(); });
+        const listaDocentes = Object.keys(mapaProfessores).map(chave => {
+            const doc = mapaProfessores[chave];
+            let labelExibicao = doc.nome;
 
-        function pesquisar() {
-            const termo = document.getElementById('txtBusca').value.trim().toUpperCase();
-            const container = document.getElementById('resultado');
-            
-            if (!termo) return;
-
-            // Filtro de String na memória
-            const filtrado = bdHorarios.filter(item => item.professor.toUpperCase().includes(termo));
-
-            if (filtrado.length === 0) {
-                container.innerHTML = `<center><font color="red" face="Courier New"><b>[ NO RESULTS ] NENHUM REGISTRO ENCONTRADO PARA "${termo}"</b></font></center>`;
-                return;
+            if (doc.matricula !== "N/A" && doc.matricula !== "") {
+                labelExibicao += ` (MATRÍCULA: ${doc.matricula})`;
+            } else {
+                const listaDiscs = Array.from(doc.disciplinas).slice(0, 2).join(", ");
+                labelExibicao += ` (${listaDiscs})`;
             }
 
-            // Ordenação clássica de dias da semana para Escolas Estaduais
-            const ordemDias = { "Segunda": 1, "Terça": 2, "Quarta": 3, "Quinta": 4, "Sexta": 5, "Sábado": 6 };
-            filtrado.sort((a, b) => {
-                if (ordemDias[a.dia] !== ordemDias[b.dia]) return ordemDias[a.dia] - ordemDias[b.dia];
-                return a.horario.localeCompare(b.horario);
-            });
+            return {
+                idUnico: chave,
+                label: labelExibicao
+            };
+        });
 
-            // Geração de tabela compatível com a estética Web 1.0 do index
-            let tabelaHtml = `
-                <center>
-                    <h2>Grade Recomendada: ${filtrado[0].professor} (${filtrado.length} Tempos)</h2>
-                    <table border="1" cellpadding="8" cellspacing="0" width="95%" bgcolor="#050505">
-                        <tr bgcolor="#111111">
-                            <td><font color="white"><b>DIA DA SEMANA</b></font></td>
-                            <td><font color="white"><b>HORÁRIO</b></font></td>
-                            <td><font color="white"><b>TURMA</b></font></td>
-                            <td><font color="white"><b>DISCIPLINA</b></font></td>
-                        </tr>
-            `;
+        listaDocentes.sort((a, b) => a.label.localeCompare(b.label));
 
-            filtrado.forEach(item => {
-                tabelaHtml += `
-                    <tr>
-                        <td><b>${item.dia}</b></td>
-                        <td>${item.horario}</td>
-                        <td><font color="cyan">${item.turma}</font></td>
-                        <td>${item.disciplina}</td>
-                    </tr>
-                `;
-            });
+        selectProf.innerHTML = '<option value="">-- SELECIONE UM PROFESSOR DA LISTA --</option>';
+        
+        listaDocentes.forEach(doc => {
+            const opt = document.createElement('option');
+            opt.value = doc.idUnico; 
+            opt.innerText = doc.label;
+            opt.style.backgroundColor = "black";
+            opt.style.color = "lime";
+            selectProf.appendChild(opt);
+        });
+    }
 
-            tabelaHtml += '</table></center><br>';
-            container.innerHTML = tabelaHtml;
+    document.getElementById('selectProfessor').addEventListener('change', (e) => {
+        const idSelecionado = e.target.value;
+        if (!idSelecionado) {
+            document.getElementById('resultado').innerHTML = '';
+            return;
         }
-    </script>
+        
+        if (idSelecionado.includes('_MAT_')) {
+            const [nome, matricula] = idSelecionado.split('_MAT_');
+            horariosFiltradosAtuais = bdHorarios.filter(item => 
+                item.professor.toUpperCase().trim() === nome && 
+                item.matricula_professor.trim() === matricula
+            );
+        } else {
+            const [nome, disciplina] = idSelecionado.split('_DISC_');
+            horariosFiltradosAtuais = bdHorarios.filter(item => 
+                item.professor.toUpperCase().trim() === nome && 
+                item.disciplina.toUpperCase().trim() === disciplina
+            );
+        }
+        
+        ordenarERenderizar('dia');
+    });
+
+    // Função normalizadora para higienizar strings de dias da semana (remove acentos, espaços extras e "-feira")
+    function normalizarDia(diaStr) {
+        if (!diaStr) return "";
+        return diaStr.toLowerCase()
+                     .normalize("NFD").replace(/[\u0300-\u036f]/g, "") // Remove acentos (Ex: terça vira terca)
+                     .replace("-feira", "")                           // Remove sufixo se houver
+                     .trim();
+    }
+
+    function ordenarERenderizar(criterio) {
+        const container = document.getElementById('resultado');
+        if (horariosFiltradosAtuais.length === 0) return;
+
+        // Mapeamento normalizado e blindado contra erros de grafia
+        const pesosDias = {
+            "segunda": 1,
+            "terca": 2,
+            "quarta": 3,
+            "quinta": 4,
+            "sexta": 5,
+            "sabado": 6,
+            "domingo": 7
+        };
+
+        if (criterio === 'dia') {
+            horariosFiltradosAtuais.sort((a, b) => {
+                const diaA = normalizarDia(a.dia);
+                const diaB = normalizarDia(b.dia);
+                
+                const pesoA = pesosDias[diaA] || 99;
+                const pesoB = pesosDias[diaB] || 99;
+
+                // 1º critério: Ordem cronológica dos dias
+                if (pesoA !== pesoB) return pesoA - pesoB;
+                
+                // 2º critério (Desempate): Horário de entrada da aula (mais cedo primeiro)
+                return a.horario.trim().localeCompare(b.horario.trim(), undefined, { numeric: true, sensitivity: 'base' });
+            });
+        } else if (criterio === 'turma') {
+            horariosFiltradosAtuais.sort((a, b) => {
+                // 1º critério: Ordem alfabética da Turma
+                if (a.turma !== b.turma) return a.turma.localeCompare(b.turma);
+                
+                // 2º critério: Ordem dos dias da semana dentro da mesma turma
+                const diaA = normalizarDia(a.dia);
+                const diaB = normalizarDia(b.dia);
+                const pesoA = pesosDias[diaA] || 99;
+                const pesoB = pesosDias[diaB] || 99;
+                if (pesoA !== pesoB) return pesoA - pesoB;
+
+                // 3º critério: Horário mais cedo dentro do mesmo dia daquela turma
+                return a.horario.trim().localeCompare(b.horario.trim(), undefined, { numeric: true, sensitivity: 'base' });
+            });
+        }
+
+        // Renderização da tabela permanece no seu design original
+        let tabelaHtml = `
+            <center>
+                <h2>Grade Encontrada: ${horariosFiltradosAtuais[0].professor} (${horariosFiltradosAtuais.length} Tempos)</h2>
+                
+                <font face="Courier New" size="2">ORGANIZAR VISUALIZAÇÃO POR:</font><br><br>
+                <button onclick="ordenarERenderizar('dia')" style="background-color: ${criterio === 'dia' ? 'lime' : 'black'}; color: ${criterio === 'dia' ? 'black' : 'lime'}; border: 1px solid lime; padding: 4px 12px; font-family: 'Courier New'; font-weight: bold; cursor: pointer; margin-right: 10px;">
+                    [ DIA DA SEMANA ]
+                </button>
+                <button onclick="ordenarERenderizar('turma')" style="background-color: ${criterio === 'turma' ? 'lime' : 'black'}; color: ${criterio === 'turma' ? 'black' : 'lime'}; border: 1px solid lime; padding: 4px 12px; font-family: 'Courier New'; font-weight: bold; cursor: pointer;">
+                    [ TURMA ]
+                </button>
+                
+                <br><br><br>
+                
+                <table border="1" cellpadding="8" cellspacing="0" width="95%" bgcolor="#050505">
+                    <tr bgcolor="#111111">
+                        <td><font color="white"><b>DIA DA SEMANA</b></font></td>
+                        <td><font color="white"><b>HORÁRIO</b></font></td>
+                        <td><font color="white"><b>TURMA</b></font></td>
+                        <td><font color="white"><b>DISCIPLINA</b></font></td>
+                    </tr>
+        `;
+
+        horariosFiltradosAtuais.forEach(item => {
+            tabelaHtml += `
+                <tr>
+                    <td><b>${item.dia}</b></td>
+                    <td>${item.horario}</td>
+                    <td><font color="cyan">${item.turma}</font></td>
+                    <td>${item.disciplina}</td>
+                </tr>
+            `;
+        });
+
+        tabelaHtml += '</table></center><br>';
+        container.innerHTML = tabelaHtml;
+    }
+</script>
 </body>
 </html>
