@@ -1,0 +1,107 @@
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf8">
+    <meta name="Author" content="Benildo Freitas">
+    <title>Benildo's Site - Mesclador</title>
+</head>
+
+<body bgcolor="black" text="lime" link="lime" vlink="green" alink="white">
+    <center>
+        <br><br>
+
+        <table border="3" cellpadding="15" cellspacing="0" width="50%">
+            <tr>
+                <td>
+                    <h1>[ UNIFICADOR DE ARQUIVOS JSON ]</h1>
+                    <hr>
+                    <br>
+
+                    <center>
+                        <font face="Courier New" size="3">1. SELECIONE TODOS OS ARQUIVOS DAS TURMAS:</font><br><br>
+                        <input type="file" id="arquivosJson" multiple accept=".json"
+                               style="background-color: black; color: lime; border: 2px solid lime; padding: 6px; font-family: 'Courier New';">
+                        <br><br><br>
+                        
+                        <font face="Courier New" size="3">2. GERAR ARQUIVO UNIFICADO:</font><br><br>
+                        <button id="btnMesclar" 
+                                style="background-color: lime; color: black; border: 1px solid white; padding: 10px 20px; font-family: 'Courier New'; font-weight: bold; cursor: pointer;">
+                            [ COMPILAR EM ESCOLA.JSON ]
+                        </button>
+                    </center>
+
+                    <br>
+                    <hr>
+                    <br>
+
+                    <div id="status">
+                        <font color="yellow" face="Courier New">Aguardando seleção de arquivos...</font>
+                    </div>
+
+                    <br>
+                    <center>
+                        <font size="1" face="Courier New">
+                            JSON Merge Tool v1.0 | Web 1.0 Style
+                        </font>
+                    </center>
+                </td>
+            </tr>
+        </table>
+    </center>
+
+    <script>
+        document.getElementById('btnMesclar').addEventListener('click', async () => {
+            const seletor = document.getElementById('arquivosJson');
+            const statusDiv = document.getElementById('status');
+            const arquivos = seletor.files;
+
+            if (arquivos.length === 0) {
+                statusDiv.innerHTML = '<font color="red" face="Courier New"><b>[ ERRO ] NENHUM ARQUIVO SELECIONADO!</b></font>';
+                return;
+            }
+
+            let bancoUnificado = [];
+            let erros = 0;
+
+            statusDiv.innerHTML = '<font color="cyan" face="Courier New">Processando arquivos...</font>';
+
+            // Loop para ler todos os arquivos selecionados
+            for (let i = 0; i < arquivos.length; i++) {
+                try {
+                    const conteudo = await arquivos[i].text();
+                    const jsonConstruido = JSON.parse(conteudo);
+                    
+                    if (Array.isArray(jsonConstruido)) {
+                        bancoUnificado = bancoUnificado.concat(jsonConstruido);
+                    }
+                } catch (e) {
+                    erros++;
+                    console.error("Erro no arquivo: " + arquivos[i].name, e);
+                }
+            }
+
+            if (bancoUnificado.length > 0) {
+                // Cria o Blob do JSON unificado com a formatação correta
+                const jsonString = JSON.stringify(bancoUnificado, null, 2);
+                const blob = new Blob([jsonString], { type: "application/json" });
+                const url = URL.createObjectURL(blob);
+                
+                // Força o download do arquivo escola.json
+                const linkDownload = document.createElement('a');
+                linkDownload.href = url;
+                linkDownload.download = 'escola.json';
+                document.body.appendChild(linkDownload);
+                linkDownload.click();
+                document.body.removeChild(linkDownload);
+                URL.revokeObjectURL(url);
+
+                statusDiv.innerHTML = `<font color="lime" face="Courier New"><b>[ SUCESSO ] ${arquivos.length - erros} TURMAS UNIFICADAS!<br>O arquivo "escola.json" foi baixado automaticamente.</b></font>`;
+            } else {
+                statusDiv.innerHTML = '<font color="red" face="Courier New"><b>[ ERRO ] NENHUM DADO VÁLIDO ENCONTRADO NOS ARQUIVOS.</b></font>';
+            }
+        });
+    </script>
+</body>
+
+</html>

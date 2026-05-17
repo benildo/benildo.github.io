@@ -1,0 +1,161 @@
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf8">
+    <meta name="Author" content="Benildo Freitas">
+    <title>Benildo's Site - Horários</title>
+</head>
+
+<body bgcolor="black" text="lime" link="lime" vlink="green" alink="white">
+    <center>
+        <br><br>
+
+        <table border="3" cellpadding="15" cellspacing="0" width="60%">
+            <tr>
+                <td>
+                    <h5>
+                        <b>
+                            <a href="index.html">[Home]</a> -
+                            <a href="dias.html">[Agenda]</a> -
+                            <a href="https://github.com/benildojr">[GitHub]</a> -
+                            <a href="noticias.html">[Noticias]</a> -                      
+                            <a href="doacao.html">[☕ Pague um café]</a>  
+                        </b>
+                    </h5>
+
+                    <hr>
+
+                    <h1>[ SISTEMA DE CONSULTA DE HORÁRIOS ]</h1>
+                    
+                    <table border="1" cellpadding="8" align="center" width="90%">
+                        <tr>
+                            <td align="center">
+                                <font id="status" face="Courier New" size="3" color="yellow">
+                                    [ STATUS ] Conectando ao banco de dados escola.json...
+                                </font>
+                            </td>
+                        </tr>
+                    </table>
+                    
+                    <br>
+
+                    <center>
+                        <font face="Courier New" size="3">PROCURAR PROFESSOR:</font><br><br>
+                        <input type="text" id="txtBusca" placeholder="DIGITE O NOME (EX: TIAGO)" disabled 
+                               style="background-color: black; color: lime; border: 2px solid lime; padding: 6px; font-family: 'Courier New'; font-weight: bold; width: 60%; text-transform: uppercase;">
+                        <br><br>
+                        <button id="btnBuscar" disabled 
+                                style="background-color: lime; color: black; border: 1px solid white; padding: 6px 20px; font-family: 'Courier New'; font-weight: bold; cursor: pointer;">
+                            [ EXECUTAR QUERY ]
+                        </button>
+                    </center>
+
+                    <br>
+                    <hr>
+                    <br>
+
+                    <div id="resultado"></div>
+
+                    <br>
+                    <center>
+                        <font size="2" face="Courier New">
+                            <a href="mesclador.html">[Painel do Administrador: Mesclar JSONs]</a>
+                        </font>
+                        <br><br>
+                        <font size="1" face="Courier New">
+                            Engine de Busca Local v1.0 | Last update: 2026
+                        </font>
+                    </center>
+                </td>
+            </tr>
+        </table>
+        <br>
+        <font size="1" face="Courier New" color="green">
+            © 1999–2026
+        </font>
+    </center>
+
+    <script>
+        let bdHorarios = [];
+
+        // Fetch automático do JSON do seu servidor GitHub
+        window.addEventListener('DOMContentLoaded', async () => {
+            const statusFnt = document.getElementById('status');
+            const inputBusca = document.getElementById('txtBusca');
+            const btnBuscar = document.getElementById('btnBuscar');
+
+            try {
+                const response = await fetch('escola.json');
+                if (!response.ok) throw new Error('Arquivo escola.json nao localizado.');
+                
+                bdHorarios = await response.json();
+                
+                statusFnt.color = "lime";
+                statusFnt.innerText = `[ READY ] ${bdHorarios.length} REGISTROS DE HORARIOS CARREGADOS COM SUCESSO!`;
+                
+                inputBusca.disabled = false;
+                btnBuscar.disabled = false;
+                inputBusca.focus();
+
+            } catch (error) {
+                statusFnt.color = "red";
+                statusFnt.innerText = `[ ERROR ] FALHA NO LINK DATA: ${error.message}`;
+            }
+        });
+
+        // Eventos disparadores
+        document.getElementById('btnBuscar').addEventListener('click', pesquisar);
+        document.getElementById('txtBusca').addEventListener('keypress', (e) => { if (e.key === 'Enter') pesquisar(); });
+
+        function pesquisar() {
+            const termo = document.getElementById('txtBusca').value.trim().toUpperCase();
+            const container = document.getElementById('resultado');
+            
+            if (!termo) return;
+
+            // Filtro de String na memória
+            const filtrado = bdHorarios.filter(item => item.professor.toUpperCase().includes(termo));
+
+            if (filtrado.length === 0) {
+                container.innerHTML = `<center><font color="red" face="Courier New"><b>[ NO RESULTS ] NENHUM REGISTRO ENCONTRADO PARA "${termo}"</b></font></center>`;
+                return;
+            }
+
+            // Ordenação clássica de dias da semana para Escolas Estaduais
+            const ordemDias = { "Segunda": 1, "Terça": 2, "Quarta": 3, "Quinta": 4, "Sexta": 5, "Sábado": 6 };
+            filtrado.sort((a, b) => {
+                if (ordemDias[a.dia] !== ordemDias[b.dia]) return ordemDias[a.dia] - ordemDias[b.dia];
+                return a.horario.localeCompare(b.horario);
+            });
+
+            // Geração de tabela compatível com a estética Web 1.0 do index
+            let tabelaHtml = `
+                <center>
+                    <h2>Grade Recomendada: ${filtrado[0].professor} (${filtrado.length} Tempos)</h2>
+                    <table border="1" cellpadding="8" cellspacing="0" width="95%" bgcolor="#050505">
+                        <tr bgcolor="#111111">
+                            <td><font color="white"><b>DIA DA SEMANA</b></font></td>
+                            <td><font color="white"><b>HORÁRIO</b></font></td>
+                            <td><font color="white"><b>TURMA</b></font></td>
+                            <td><font color="white"><b>DISCIPLINA</b></font></td>
+                        </tr>
+            `;
+
+            filtrado.forEach(item => {
+                tabelaHtml += `
+                    <tr>
+                        <td><b>${item.dia}</b></td>
+                        <td>${item.horario}</td>
+                        <td><font color="cyan">${item.turma}</font></td>
+                        <td>${item.disciplina}</td>
+                    </tr>
+                `;
+            });
+
+            tabelaHtml += '</table></center><br>';
+            container.innerHTML = tabelaHtml;
+        }
+    </script>
+</body>
+</html>
