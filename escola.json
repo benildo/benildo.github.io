@@ -260,7 +260,7 @@
     "dia": "Quarta",
     "horario": "13:00 as 13:50",
     "disciplina": "LÍNGUA PORTUGUESA - INTERPRETAÇÃO E REDAÇÃO",
-    "professor": "A DEFINIR",
+    "professor": "SEM PROFESSOR",
     "matricula_professor": "N/A"
   },
   {
@@ -300,7 +300,7 @@
     "dia": "Quarta",
     "horario": "13:50 as 14:40",
     "disciplina": "LÍNGUA PORTUGUESA - INTERPRETAÇÃO E REDAÇÃO",
-    "professor": "A DEFINIR",
+    "professor": "SEM PROFESSOR",
     "matricula_professor": "N/A"
   },
   {
@@ -436,8 +436,8 @@
     "dia": "Quinta",
     "horario": "09:05 as 09:55",
     "disciplina": "LETRAMENTO DIGITAL",
-    "professor": "A DEFINIR",
-    "matricula_professor": "N/A"
+    "professor": "STEPHANIE",
+    "matricula_professor": "09586041"
   },
   {
     "turma": "602",
@@ -476,8 +476,8 @@
     "dia": "Quinta",
     "horario": "09:55 as 10:45",
     "disciplina": "LETRAMENTO DIGITAL",
-    "professor": "A DEFINIR",
-    "matricula_professor": "N/A"
+    "professor": "STEPHANIE",
+    "matricula_professor": "09586041"
   },
   {
     "turma": "602",
@@ -569,14 +569,6 @@
   },
   {
     "turma": "602",
-    "dia": "Segunda",
-    "horario": "13:00 as 13:50",
-    "disciplina": "HISTÓRIA",
-    "professor": "A DEFINIR",
-    "matricula_professor": "N/A"
-  },
-  {
-    "turma": "602",
     "dia": "Terca",
     "horario": "13:00 as 13:50",
     "disciplina": "LÍNGUA PORTUGUESA - INTERPRETAÇÃO E REDAÇÃO",
@@ -590,6 +582,14 @@
     "disciplina": "LÍNGUA INGLESA",
     "professor": "DEBORA",
     "matricula_professor": "09654823"
+  },
+  {
+    "turma": "602",
+    "dia": "Quinta",
+    "horario": "13:00 as 13:50",
+    "disciplina": "HISTÓRIA",
+    "professor": "NILCELENE",
+    "matricula_professor": "30514418"
   },
   {
     "turma": "602",
@@ -601,14 +601,6 @@
   },
   {
     "turma": "602",
-    "dia": "Segunda",
-    "horario": "13:50 as 14:40",
-    "disciplina": "HISTÓRIA",
-    "professor": "A DEFINIR",
-    "matricula_professor": "N/A"
-  },
-  {
-    "turma": "602",
     "dia": "Terca",
     "horario": "13:50 as 14:40",
     "disciplina": "LÍNGUA PORTUGUESA - INTERPRETAÇÃO E REDAÇÃO",
@@ -625,18 +617,18 @@
   },
   {
     "turma": "602",
-    "dia": "Sexta",
+    "dia": "Quinta",
     "horario": "13:50 as 14:40",
-    "disciplina": "ARTE",
-    "professor": "A DEFINIR",
-    "matricula_professor": "N/A"
+    "disciplina": "HISTÓRIA",
+    "professor": "NILCELENE",
+    "matricula_professor": "30514418"
   },
   {
     "turma": "602",
-    "dia": "Segunda",
-    "horario": "14:55 as 15:45",
-    "disciplina": "HISTÓRIA",
-    "professor": "A DEFINIR",
+    "dia": "Sexta",
+    "horario": "13:50 as 14:40",
+    "disciplina": "ARTE",
+    "professor": "SEM PROFESSOR",
     "matricula_professor": "N/A"
   },
   {
@@ -649,10 +641,18 @@
   },
   {
     "turma": "602",
+    "dia": "Quinta",
+    "horario": "14:55 as 15:45",
+    "disciplina": "HISTÓRIA",
+    "professor": "NILCELENE",
+    "matricula_professor": "30514418"
+  },
+  {
+    "turma": "602",
     "dia": "Sexta",
     "horario": "14:55 as 15:45",
     "disciplina": "ARTE",
-    "professor": "A DEFINIR",
+    "professor": "SEM PROFESSOR",
     "matricula_professor": "N/A"
   },
   {
@@ -820,8 +820,8 @@
     "dia": "Segunda",
     "horario": "10:45 as 11:35",
     "disciplina": "LÍNGUA PORTUGUESA - INTERPRETAÇÃO E REDAÇÃO",
-    "professor": "DELFIM",
-    "matricula_professor": "30477921"
+    "professor": "SEM PROFESSOR",
+    "matricula_professor": "N/A"
   },
   {
     "turma": "701",
@@ -851,17 +851,17 @@
     "turma": "701",
     "dia": "Sexta",
     "horario": "10:45 as 11:35",
-    "disciplina": "MATEMÁTICA - REFORÇO E RACIOCÍNIO LÓGICO",
-    "professor": "TIAGO",
-    "matricula_professor": "09729708"
+    "disciplina": "LETRAMENTO DIGITAL",
+    "professor": "STEPHANIE",
+    "matricula_professor": "09586041"
   },
   {
     "turma": "701",
     "dia": "Segunda",
     "horario": "11:35 as 12:25",
     "disciplina": "LÍNGUA PORTUGUESA - INTERPRETAÇÃO E REDAÇÃO",
-    "professor": "DELFIM",
-    "matricula_professor": "30477921"
+    "professor": "SEM PROFESSOR",
+    "matricula_professor": "N/A"
   },
   {
     "turma": "701",
@@ -891,17 +891,17 @@
     "turma": "701",
     "dia": "Sexta",
     "horario": "11:35 as 12:25",
-    "disciplina": "MATEMÁTICA - REFORÇO E RACIOCÍNIO LÓGICO",
-    "professor": "TIAGO",
-    "matricula_professor": "09729708"
+    "disciplina": "LETRAMENTO DIGITAL",
+    "professor": "STEPHANIE",
+    "matricula_professor": "09586041"
   },
   {
     "turma": "701",
     "dia": "Segunda",
     "horario": "13:00 as 13:50",
-    "disciplina": "LETRAMENTO DIGITAL",
-    "professor": "STEPHANIE",
-    "matricula_professor": "09586041"
+    "disciplina": "MATEMÁTICA - REFORÇO E RACIOCÍNIO LÓGICO",
+    "professor": "SEM PROFESSOR",
+    "matricula_professor": "N/A"
   },
   {
     "turma": "701",
@@ -939,9 +939,9 @@
     "turma": "701",
     "dia": "Segunda",
     "horario": "13:50 as 14:40",
-    "disciplina": "LETRAMENTO DIGITAL",
-    "professor": "STEPHANIE",
-    "matricula_professor": "09586041"
+    "disciplina": "MATEMÁTICA - REFORÇO E RACIOCÍNIO LÓGICO",
+    "professor": "SEM PROFESSOR",
+    "matricula_professor": "N/A"
   },
   {
     "turma": "701",
@@ -1052,8 +1052,8 @@
     "dia": "Segunda",
     "horario": "09:05 as 09:55",
     "disciplina": "LÍNGUA PORTUGUESA - INTERPRETAÇÃO E REDAÇÃO",
-    "professor": "DELFIM",
-    "matricula_professor": "30477921"
+    "professor": "SEM PROFESSOR",
+    "matricula_professor": "N/A"
   },
   {
     "turma": "702",
@@ -1092,8 +1092,8 @@
     "dia": "Segunda",
     "horario": "09:55 as 10:45",
     "disciplina": "LÍNGUA PORTUGUESA - INTERPRETAÇÃO E REDAÇÃO",
-    "professor": "DELFIM",
-    "matricula_professor": "30477921"
+    "professor": "SEM PROFESSOR",
+    "matricula_professor": "N/A"
   },
   {
     "turma": "702",
@@ -1324,8 +1324,8 @@
     "dia": "Terca",
     "horario": "07:10 as 08:00",
     "disciplina": "LÍNGUA PORTUGUESA",
-    "professor": "DELFIM",
-    "matricula_professor": "30477921"
+    "professor": "SEM PROFESSOR",
+    "matricula_professor": "N/A"
   },
   {
     "turma": "801",
@@ -1364,8 +1364,8 @@
     "dia": "Terca",
     "horario": "08:00 as 08:50",
     "disciplina": "LÍNGUA PORTUGUESA",
-    "professor": "DELFIM",
-    "matricula_professor": "30477921"
+    "professor": "SEM PROFESSOR",
+    "matricula_professor": "N/A"
   },
   {
     "turma": "801",
@@ -1412,8 +1412,8 @@
     "dia": "Quarta",
     "horario": "09:05 as 09:55",
     "disciplina": "LÍNGUA PORTUGUESA",
-    "professor": "DELFIM",
-    "matricula_professor": "30477921"
+    "professor": "SEM PROFESSOR",
+    "matricula_professor": "N/A"
   },
   {
     "turma": "801",
@@ -1428,8 +1428,8 @@
     "dia": "Sexta",
     "horario": "09:05 as 09:55",
     "disciplina": "CIÊNCIAS",
-    "professor": "CLEBER",
-    "matricula_professor": "30740161"
+    "professor": "SEM PROFESSOR",
+    "matricula_professor": "N/A"
   },
   {
     "turma": "801",
@@ -1452,8 +1452,8 @@
     "dia": "Quarta",
     "horario": "09:55 as 10:45",
     "disciplina": "LÍNGUA PORTUGUESA",
-    "professor": "DELFIM",
-    "matricula_professor": "30477921"
+    "professor": "SEM PROFESSOR",
+    "matricula_professor": "N/A"
   },
   {
     "turma": "801",
@@ -1468,8 +1468,8 @@
     "dia": "Sexta",
     "horario": "09:55 as 10:45",
     "disciplina": "CIÊNCIAS",
-    "professor": "CLEBER",
-    "matricula_professor": "30740161"
+    "professor": "SEM PROFESSOR",
+    "matricula_professor": "N/A"
   },
   {
     "turma": "801",
@@ -1484,8 +1484,8 @@
     "dia": "Terca",
     "horario": "10:45 as 11:35",
     "disciplina": "CIÊNCIAS",
-    "professor": "CLEBER",
-    "matricula_professor": "30740161"
+    "professor": "SEM PROFESSOR",
+    "matricula_professor": "N/A"
   },
   {
     "turma": "801",
@@ -1524,8 +1524,8 @@
     "dia": "Terca",
     "horario": "11:35 as 12:25",
     "disciplina": "CIÊNCIAS",
-    "professor": "CLEBER",
-    "matricula_professor": "30740161"
+    "professor": "SEM PROFESSOR",
+    "matricula_professor": "N/A"
   },
   {
     "turma": "801",
@@ -1644,8 +1644,8 @@
     "dia": "Segunda",
     "horario": "07:10 as 08:00",
     "disciplina": "LÍNGUA PORTUGUESA - INTERPRETAÇÃO E REDAÇÃO",
-    "professor": "DELFIM",
-    "matricula_professor": "30477921"
+    "professor": "SEM PROFESSOR",
+    "matricula_professor": "N/A"
   },
   {
     "turma": "802",
@@ -1660,15 +1660,15 @@
     "dia": "Quarta",
     "horario": "07:10 as 08:00",
     "disciplina": "LÍNGUA PORTUGUESA",
-    "professor": "DELFIM",
-    "matricula_professor": "30477921"
+    "professor": "SEM PROFESSOR",
+    "matricula_professor": "N/A"
   },
   {
     "turma": "802",
     "dia": "Quinta",
     "horario": "07:10 as 08:00",
     "disciplina": "ARTE",
-    "professor": "A DEFINIR",
+    "professor": "SEM PROFESSOR",
     "matricula_professor": "N/A"
   },
   {
@@ -1684,8 +1684,8 @@
     "dia": "Segunda",
     "horario": "08:00 as 08:50",
     "disciplina": "LÍNGUA PORTUGUESA - INTERPRETAÇÃO E REDAÇÃO",
-    "professor": "DELFIM",
-    "matricula_professor": "30477921"
+    "professor": "SEM PROFESSOR",
+    "matricula_professor": "N/A"
   },
   {
     "turma": "802",
@@ -1700,15 +1700,15 @@
     "dia": "Quarta",
     "horario": "08:00 as 08:50",
     "disciplina": "LÍNGUA PORTUGUESA",
-    "professor": "DELFIM",
-    "matricula_professor": "30477921"
+    "professor": "SEM PROFESSOR",
+    "matricula_professor": "N/A"
   },
   {
     "turma": "802",
     "dia": "Quinta",
     "horario": "08:00 as 08:50",
     "disciplina": "ARTE",
-    "professor": "A DEFINIR",
+    "professor": "SEM PROFESSOR",
     "matricula_professor": "N/A"
   },
   {
@@ -1732,8 +1732,8 @@
     "dia": "Terca",
     "horario": "09:05 as 09:55",
     "disciplina": "LÍNGUA PORTUGUESA",
-    "professor": "DELFIM",
-    "matricula_professor": "30477921"
+    "professor": "SEM PROFESSOR",
+    "matricula_professor": "N/A"
   },
   {
     "turma": "802",
@@ -1772,8 +1772,8 @@
     "dia": "Terca",
     "horario": "09:55 as 10:45",
     "disciplina": "LÍNGUA PORTUGUESA",
-    "professor": "DELFIM",
-    "matricula_professor": "30477921"
+    "professor": "SEM PROFESSOR",
+    "matricula_professor": "N/A"
   },
   {
     "turma": "802",
@@ -1820,8 +1820,8 @@
     "dia": "Quarta",
     "horario": "10:45 as 11:35",
     "disciplina": "CIÊNCIAS",
-    "professor": "CLEBER",
-    "matricula_professor": "30740161"
+    "professor": "SEM PROFESSOR",
+    "matricula_professor": "N/A"
   },
   {
     "turma": "802",
@@ -1836,8 +1836,8 @@
     "dia": "Sexta",
     "horario": "10:45 as 11:35",
     "disciplina": "CIÊNCIAS",
-    "professor": "CLEBER",
-    "matricula_professor": "30740161"
+    "professor": "SEM PROFESSOR",
+    "matricula_professor": "N/A"
   },
   {
     "turma": "802",
@@ -1860,8 +1860,8 @@
     "dia": "Quarta",
     "horario": "11:35 as 12:25",
     "disciplina": "CIÊNCIAS",
-    "professor": "CLEBER",
-    "matricula_professor": "30740161"
+    "professor": "SEM PROFESSOR",
+    "matricula_professor": "N/A"
   },
   {
     "turma": "802",
@@ -1876,15 +1876,15 @@
     "dia": "Sexta",
     "horario": "11:35 as 12:25",
     "disciplina": "CIÊNCIAS",
-    "professor": "CLEBER",
-    "matricula_professor": "30740161"
+    "professor": "SEM PROFESSOR",
+    "matricula_professor": "N/A"
   },
   {
     "turma": "802",
     "dia": "Segunda",
     "horario": "13:00 as 13:50",
     "disciplina": "HISTÓRIA",
-    "professor": "A DEFINIR",
+    "professor": "SEM PROFESSOR",
     "matricula_professor": "N/A"
   },
   {
@@ -1908,7 +1908,7 @@
     "dia": "Segunda",
     "horario": "13:50 as 14:40",
     "disciplina": "HISTÓRIA",
-    "professor": "A DEFINIR",
+    "professor": "SEM PROFESSOR",
     "matricula_professor": "N/A"
   },
   {
@@ -1940,7 +1940,7 @@
     "dia": "Segunda",
     "horario": "14:55 as 15:45",
     "disciplina": "HISTÓRIA",
-    "professor": "A DEFINIR",
+    "professor": "SEM PROFESSOR",
     "matricula_professor": "N/A"
   },
   {
@@ -1988,8 +1988,8 @@
     "dia": "Quarta",
     "horario": "07:10 as 08:00",
     "disciplina": "CIÊNCIAS",
-    "professor": "CLEBER",
-    "matricula_professor": "30740161"
+    "professor": "SEM PROFESSOR",
+    "matricula_professor": "N/A"
   },
   {
     "turma": "901",
@@ -2004,8 +2004,8 @@
     "dia": "Sexta",
     "horario": "07:10 as 08:00",
     "disciplina": "CIÊNCIAS",
-    "professor": "CLEBER",
-    "matricula_professor": "30740161"
+    "professor": "SEM PROFESSOR",
+    "matricula_professor": "N/A"
   },
   {
     "turma": "901",
@@ -2028,8 +2028,8 @@
     "dia": "Quarta",
     "horario": "08:00 as 08:50",
     "disciplina": "CIÊNCIAS",
-    "professor": "CLEBER",
-    "matricula_professor": "30740161"
+    "professor": "SEM PROFESSOR",
+    "matricula_professor": "N/A"
   },
   {
     "turma": "901",
@@ -2044,8 +2044,8 @@
     "dia": "Sexta",
     "horario": "08:00 as 08:50",
     "disciplina": "CIÊNCIAS",
-    "professor": "CLEBER",
-    "matricula_professor": "30740161"
+    "professor": "SEM PROFESSOR",
+    "matricula_professor": "N/A"
   },
   {
     "turma": "901",
@@ -2132,8 +2132,8 @@
     "dia": "Quarta",
     "horario": "10:45 as 11:35",
     "disciplina": "LÍNGUA PORTUGUESA",
-    "professor": "DELFIM",
-    "matricula_professor": "30477921"
+    "professor": "SEM PROFESSOR",
+    "matricula_professor": "N/A"
   },
   {
     "turma": "901",
@@ -2164,16 +2164,16 @@
     "dia": "Terca",
     "horario": "11:35 as 12:25",
     "disciplina": "LÍNGUA PORTUGUESA",
-    "professor": "DELFIM",
-    "matricula_professor": "30477921"
+    "professor": "SEM PROFESSOR",
+    "matricula_professor": "N/A"
   },
   {
     "turma": "901",
     "dia": "Quarta",
     "horario": "11:35 as 12:25",
     "disciplina": "LÍNGUA PORTUGUESA",
-    "professor": "DELFIM",
-    "matricula_professor": "30477921"
+    "professor": "SEM PROFESSOR",
+    "matricula_professor": "N/A"
   },
   {
     "turma": "901",
@@ -2196,7 +2196,7 @@
     "dia": "Segunda",
     "horario": "13:00 as 13:50",
     "disciplina": "ARTE",
-    "professor": "A DEFINIR",
+    "professor": "SEM PROFESSOR",
     "matricula_professor": "N/A"
   },
   {
@@ -2204,8 +2204,8 @@
     "dia": "Terca",
     "horario": "13:00 as 13:50",
     "disciplina": "LÍNGUA PORTUGUESA - INTERPRETAÇÃO E REDAÇÃO",
-    "professor": "DELFIM",
-    "matricula_professor": "30477921"
+    "professor": "SEM PROFESSOR",
+    "matricula_professor": "N/A"
   },
   {
     "turma": "901",
@@ -2236,7 +2236,7 @@
     "dia": "Segunda",
     "horario": "13:50 as 14:40",
     "disciplina": "ARTE",
-    "professor": "A DEFINIR",
+    "professor": "SEM PROFESSOR",
     "matricula_professor": "N/A"
   },
   {
@@ -2244,8 +2244,8 @@
     "dia": "Terca",
     "horario": "13:50 as 14:40",
     "disciplina": "LÍNGUA PORTUGUESA - INTERPRETAÇÃO E REDAÇÃO",
-    "professor": "DELFIM",
-    "matricula_professor": "30477921"
+    "professor": "SEM PROFESSOR",
+    "matricula_professor": "N/A"
   },
   {
     "turma": "901",
@@ -2276,8 +2276,8 @@
     "dia": "Terca",
     "horario": "14:55 as 15:45",
     "disciplina": "LÍNGUA PORTUGUESA",
-    "professor": "DELFIM",
-    "matricula_professor": "30477921"
+    "professor": "SEM PROFESSOR",
+    "matricula_professor": "N/A"
   },
   {
     "turma": "901",
@@ -2390,14 +2390,6 @@
     "disciplina": "LÍNGUA PORTUGUESA/LITERATURA",
     "professor": "RAQUEL",
     "matricula_professor": "09282179"
-  },
-  {
-    "turma": "1001",
-    "dia": "Quarta",
-    "horario": "09:05 as 09:55",
-    "disciplina": "BIOLOGIA",
-    "professor": "CLEBER",
-    "matricula_professor": "30740161"
   },
   {
     "turma": "1001",
@@ -2430,14 +2422,6 @@
     "disciplina": "LÍNGUA PORTUGUESA/LITERATURA",
     "professor": "RAQUEL",
     "matricula_professor": "09282179"
-  },
-  {
-    "turma": "1001",
-    "dia": "Quarta",
-    "horario": "09:55 as 10:45",
-    "disciplina": "BIOLOGIA",
-    "professor": "CLEBER",
-    "matricula_professor": "30740161"
   },
   {
     "turma": "1001",
@@ -2625,6 +2609,14 @@
   },
   {
     "turma": "1001",
+    "dia": "Terca",
+    "horario": "14:55 as 15:45",
+    "disciplina": "BIOLOGIA",
+    "professor": "FELIPPE",
+    "matricula_professor": "09709023"
+  },
+  {
+    "turma": "1001",
     "dia": "Quinta",
     "horario": "14:55 as 15:45",
     "disciplina": "LINGUAGENS APLICADAS ÀS TECNOLOGIAS",
@@ -2646,6 +2638,14 @@
     "disciplina": "QUÍMICA",
     "professor": "MONICA",
     "matricula_professor": "30805477"
+  },
+  {
+    "turma": "1001",
+    "dia": "Terca",
+    "horario": "15:45 as 16:35",
+    "disciplina": "BIOLOGIA",
+    "professor": "FELIPPE",
+    "matricula_professor": "09709023"
   },
   {
     "turma": "1001",
@@ -2892,8 +2892,8 @@
     "dia": "Terca",
     "horario": "13:00 as 13:50",
     "disciplina": "BIOLOGIA",
-    "professor": "CLEBER",
-    "matricula_professor": "30740161"
+    "professor": "FELIPPE",
+    "matricula_professor": "09709023"
   },
   {
     "turma": "1002",
@@ -2924,8 +2924,8 @@
     "dia": "Terca",
     "horario": "13:50 as 14:40",
     "disciplina": "BIOLOGIA",
-    "professor": "CLEBER",
-    "matricula_professor": "30740161"
+    "professor": "FELIPPE",
+    "matricula_professor": "09709023"
   },
   {
     "turma": "1002",
@@ -3124,8 +3124,8 @@
     "dia": "Terca",
     "horario": "09:05 as 09:55",
     "disciplina": "BIOLOGIA",
-    "professor": "CLEBER",
-    "matricula_professor": "30740161"
+    "professor": "FELIPPE",
+    "matricula_professor": "09709023"
   },
   {
     "turma": "2001",
@@ -3164,8 +3164,8 @@
     "dia": "Terca",
     "horario": "09:55 as 10:45",
     "disciplina": "BIOLOGIA",
-    "professor": "CLEBER",
-    "matricula_professor": "30740161"
+    "professor": "FELIPPE",
+    "matricula_professor": "09709023"
   },
   {
     "turma": "2001",
@@ -3364,8 +3364,8 @@
     "dia": "Sexta",
     "horario": "14:55 as 15:45",
     "disciplina": "ELETIVA 2",
-    "professor": "CLÉA",
-    "matricula_professor": "50722379/3"
+    "professor": "GISELI",
+    "matricula_professor": "09753443"
   },
   {
     "turma": "2001",
@@ -3412,8 +3412,8 @@
     "dia": "Terca",
     "horario": "07:10 as 08:00",
     "disciplina": "BIOLOGIA",
-    "professor": "CLEBER",
-    "matricula_professor": "30740161"
+    "professor": "FELIPPE",
+    "matricula_professor": "09709023"
   },
   {
     "turma": "3001",
@@ -3452,8 +3452,8 @@
     "dia": "Terca",
     "horario": "08:00 as 08:50",
     "disciplina": "BIOLOGIA",
-    "professor": "CLEBER",
-    "matricula_professor": "30740161"
+    "professor": "FELIPPE",
+    "matricula_professor": "09709023"
   },
   {
     "turma": "3001",
@@ -3612,8 +3612,8 @@
     "dia": "Terca",
     "horario": "11:35 as 12:25",
     "disciplina": "ELETIVA 2",
-    "professor": "TADEU",
-    "matricula_professor": "51754967/1"
+    "professor": "GISELI",
+    "matricula_professor": "09753443"
   },
   {
     "turma": "3001",
@@ -3652,8 +3652,8 @@
     "dia": "Terca",
     "horario": "13:00 as 13:50",
     "disciplina": "GEOGRAFIA",
-    "professor": "TADEU",
-    "matricula_professor": "51754967/1"
+    "professor": "GISELI",
+    "matricula_professor": "09753443"
   },
   {
     "turma": "3001",
@@ -3684,8 +3684,8 @@
     "dia": "Terca",
     "horario": "13:50 as 14:40",
     "disciplina": "GEOGRAFIA",
-    "professor": "TADEU",
-    "matricula_professor": "51754967/1"
+    "professor": "GISELI",
+    "matricula_professor": "09753443"
   },
   {
     "turma": "3001",
@@ -3768,7 +3768,7 @@
     "matricula_professor": "31222110"
   },
   {
-    "turma": "AP101",
+    "turma": "AP201",
     "dia": "Segunda",
     "horario": "07:10 as 08:00",
     "disciplina": "MATEMÁTICA",
@@ -3776,31 +3776,31 @@
     "matricula_professor": "09729708"
   },
   {
-    "turma": "AP101",
+    "turma": "AP201",
     "dia": "Terca",
     "horario": "07:10 as 08:00",
     "disciplina": "LÍNGUA PORTUGUESA",
-    "professor": "JUCELIA",
-    "matricula_professor": "09679614"
+    "professor": "SEM PROFESSOR",
+    "matricula_professor": "N/A"
   },
   {
-    "turma": "AP101",
+    "turma": "AP201",
     "dia": "Quinta",
     "horario": "07:10 as 08:00",
-    "disciplina": "ARTE",
-    "professor": "PEDRO",
-    "matricula_professor": "51500400/1"
+    "disciplina": "EDUCAÇÃO FÍSICA",
+    "professor": "SEM PROFESSOR",
+    "matricula_professor": "N/A"
   },
   {
-    "turma": "AP101",
+    "turma": "AP201",
     "dia": "Sexta",
     "horario": "07:10 as 08:00",
     "disciplina": "LÍNGUA PORTUGUESA",
-    "professor": "JUCELIA",
-    "matricula_professor": "09679614"
+    "professor": "SEM PROFESSOR",
+    "matricula_professor": "N/A"
   },
   {
-    "turma": "AP101",
+    "turma": "AP201",
     "dia": "Segunda",
     "horario": "08:00 as 08:50",
     "disciplina": "MATEMÁTICA",
@@ -3808,47 +3808,63 @@
     "matricula_professor": "09729708"
   },
   {
-    "turma": "AP101",
+    "turma": "AP201",
     "dia": "Terca",
     "horario": "08:00 as 08:50",
     "disciplina": "LÍNGUA PORTUGUESA",
-    "professor": "JUCELIA",
-    "matricula_professor": "09679614"
+    "professor": "SEM PROFESSOR",
+    "matricula_professor": "N/A"
   },
   {
-    "turma": "AP101",
+    "turma": "AP201",
+    "dia": "Quarta",
+    "horario": "08:00 as 08:50",
+    "disciplina": "CF GEOGRAFIA",
+    "professor": "ROBERTO",
+    "matricula_professor": "09610254"
+  },
+  {
+    "turma": "AP201",
     "dia": "Quinta",
     "horario": "08:00 as 08:50",
-    "disciplina": "ARTE",
-    "professor": "PEDRO",
-    "matricula_professor": "51500400/1"
+    "disciplina": "EDUCAÇÃO FÍSICA",
+    "professor": "SEM PROFESSOR",
+    "matricula_professor": "N/A"
   },
   {
-    "turma": "AP101",
+    "turma": "AP201",
     "dia": "Sexta",
     "horario": "08:00 as 08:50",
     "disciplina": "LÍNGUA PORTUGUESA",
-    "professor": "JUCELIA",
-    "matricula_professor": "09679614"
+    "professor": "SEM PROFESSOR",
+    "matricula_professor": "N/A"
   },
   {
-    "turma": "AP101",
+    "turma": "AP201",
     "dia": "Segunda",
     "horario": "09:05 as 09:55",
-    "disciplina": "HISTÓRIA",
-    "professor": "NILCELENE",
-    "matricula_professor": "30514418"
+    "disciplina": "CF GEOGRAFIA",
+    "professor": "ROBERTO",
+    "matricula_professor": "09610254"
   },
   {
-    "turma": "AP101",
+    "turma": "AP201",
     "dia": "Terca",
     "horario": "09:05 as 09:55",
     "disciplina": "LÍNGUA PORTUGUESA",
-    "professor": "JUCELIA",
-    "matricula_professor": "09679614"
+    "professor": "SEM PROFESSOR",
+    "matricula_professor": "N/A"
   },
   {
-    "turma": "AP101",
+    "turma": "AP201",
+    "dia": "Quarta",
+    "horario": "09:05 as 09:55",
+    "disciplina": "CF GEOGRAFIA",
+    "professor": "ROBERTO",
+    "matricula_professor": "09610254"
+  },
+  {
+    "turma": "AP201",
     "dia": "Quinta",
     "horario": "09:05 as 09:55",
     "disciplina": "MATEMÁTICA",
@@ -3856,31 +3872,39 @@
     "matricula_professor": "09729708"
   },
   {
-    "turma": "AP101",
+    "turma": "AP201",
     "dia": "Sexta",
     "horario": "09:05 as 09:55",
-    "disciplina": "HISTÓRIA",
-    "professor": "NILCELENE",
-    "matricula_professor": "30514418"
+    "disciplina": "TECNOLOGIA E INOVAÇÃO",
+    "professor": "SEM PROFESSOR",
+    "matricula_professor": "N/A"
   },
   {
-    "turma": "AP101",
+    "turma": "AP201",
     "dia": "Segunda",
     "horario": "09:55 as 10:45",
-    "disciplina": "HISTÓRIA",
-    "professor": "NILCELENE",
-    "matricula_professor": "30514418"
+    "disciplina": "CF GEOGRAFIA",
+    "professor": "ROBERTO",
+    "matricula_professor": "09610254"
   },
   {
-    "turma": "AP101",
+    "turma": "AP201",
     "dia": "Terca",
     "horario": "09:55 as 10:45",
     "disciplina": "LÍNGUA PORTUGUESA",
-    "professor": "JUCELIA",
-    "matricula_professor": "09679614"
+    "professor": "SEM PROFESSOR",
+    "matricula_professor": "N/A"
   },
   {
-    "turma": "AP101",
+    "turma": "AP201",
+    "dia": "Quarta",
+    "horario": "09:55 as 10:45",
+    "disciplina": "CF GEOGRAFIA",
+    "professor": "ROBERTO",
+    "matricula_professor": "09610254"
+  },
+  {
+    "turma": "AP201",
     "dia": "Quinta",
     "horario": "09:55 as 10:45",
     "disciplina": "MATEMÁTICA",
@@ -3888,39 +3912,39 @@
     "matricula_professor": "09729708"
   },
   {
-    "turma": "AP101",
+    "turma": "AP201",
     "dia": "Sexta",
     "horario": "09:55 as 10:45",
-    "disciplina": "HISTÓRIA",
-    "professor": "NILCELENE",
-    "matricula_professor": "30514418"
+    "disciplina": "TECNOLOGIA E INOVAÇÃO",
+    "professor": "SEM PROFESSOR",
+    "matricula_professor": "N/A"
   },
   {
-    "turma": "AP101",
+    "turma": "AP201",
     "dia": "Segunda",
     "horario": "10:45 as 11:35",
-    "disciplina": "CIÊNCIAS",
-    "professor": "MONICA",
-    "matricula_professor": "30805477"
+    "disciplina": "CF GEOGRAFIA",
+    "professor": "ROBERTO",
+    "matricula_professor": "09610254"
   },
   {
-    "turma": "AP101",
+    "turma": "AP201",
     "dia": "Terca",
     "horario": "10:45 as 11:35",
-    "disciplina": "CIÊNCIAS",
-    "professor": "MONICA",
-    "matricula_professor": "30805477"
+    "disciplina": "LÍNGUA ESTRANGEIRA - INGLÊS",
+    "professor": "SEM PROFESSOR",
+    "matricula_professor": "N/A"
   },
   {
-    "turma": "AP101",
+    "turma": "AP201",
     "dia": "Quarta",
     "horario": "10:45 as 11:35",
-    "disciplina": "EDUCAÇÃO FÍSICA",
-    "professor": "BENILDO",
-    "matricula_professor": "51467771/1"
+    "disciplina": "PROJETO DE VIDA",
+    "professor": "SEM PROFESSOR",
+    "matricula_professor": "N/A"
   },
   {
-    "turma": "AP101",
+    "turma": "AP201",
     "dia": "Quinta",
     "horario": "10:45 as 11:35",
     "disciplina": "MATEMÁTICA",
@@ -3928,39 +3952,23 @@
     "matricula_professor": "09729708"
   },
   {
-    "turma": "AP101",
-    "dia": "Sexta",
-    "horario": "10:45 as 11:35",
-    "disciplina": "HISTÓRIA",
-    "professor": "NILCELENE",
-    "matricula_professor": "30514418"
-  },
-  {
-    "turma": "AP101",
-    "dia": "Segunda",
-    "horario": "11:35 as 12:25",
-    "disciplina": "CIÊNCIAS",
-    "professor": "MONICA",
-    "matricula_professor": "30805477"
-  },
-  {
-    "turma": "AP101",
+    "turma": "AP201",
     "dia": "Terca",
     "horario": "11:35 as 12:25",
-    "disciplina": "CIÊNCIAS",
-    "professor": "MONICA",
-    "matricula_professor": "30805477"
+    "disciplina": "LÍNGUA ESTRANGEIRA - INGLÊS",
+    "professor": "SEM PROFESSOR",
+    "matricula_professor": "N/A"
   },
   {
-    "turma": "AP101",
+    "turma": "AP201",
     "dia": "Quarta",
     "horario": "11:35 as 12:25",
-    "disciplina": "EDUCAÇÃO FÍSICA",
-    "professor": "BENILDO",
-    "matricula_professor": "51467771/1"
+    "disciplina": "PROJETO DE VIDA",
+    "professor": "SEM PROFESSOR",
+    "matricula_professor": "N/A"
   },
   {
-    "turma": "AP101",
+    "turma": "AP201",
     "dia": "Quinta",
     "horario": "11:35 as 12:25",
     "disciplina": "MATEMÁTICA",
@@ -3968,15 +3976,7 @@
     "matricula_professor": "09729708"
   },
   {
-    "turma": "AP101",
-    "dia": "Sexta",
-    "horario": "11:35 as 12:25",
-    "disciplina": "HISTÓRIA",
-    "professor": "NILCELENE",
-    "matricula_professor": "30514418"
-  },
-  {
-    "turma": "AP301",
+    "turma": "AP401",
     "dia": "Segunda",
     "horario": "13:00 as 13:50",
     "disciplina": "ARTE",
@@ -3984,218 +3984,218 @@
     "matricula_professor": "50722379/3"
   },
   {
-    "turma": "AP301",
+    "turma": "AP401",
     "dia": "Terca",
     "horario": "13:00 as 13:50",
-    "disciplina": "CF HISTÓRIA",
-    "professor": "EDUARDO",
-    "matricula_professor": "30561252"
+    "disciplina": "GEOGRAFIA",
+    "professor": "SEM PROFESSOR",
+    "matricula_professor": "N/A"
   },
   {
-    "turma": "AP301",
-    "dia": "Quarta",
+    "turma": "AP401",
+    "dia": "Quinta",
     "horario": "13:00 as 13:50",
-    "disciplina": "CF EDUCAÇÃO FÍSICA",
+    "disciplina": "MATEMÁTICA",
+    "professor": "WILLYAN",
+    "matricula_professor": "51647273/1"
+  },
+  {
+    "turma": "AP401",
+    "dia": "Sexta",
+    "horario": "13:00 as 13:50",
+    "disciplina": "TECNOLOGIA E INOVAÇÃO",
+    "professor": "SEM PROFESSOR",
+    "matricula_professor": "N/A"
+  },
+  {
+    "turma": "AP401",
+    "dia": "Segunda",
+    "horario": "13:50 as 14:40",
+    "disciplina": "ARTE",
+    "professor": "CLÉA",
+    "matricula_professor": "50722379/3"
+  },
+  {
+    "turma": "AP401",
+    "dia": "Terca",
+    "horario": "13:50 as 14:40",
+    "disciplina": "GEOGRAFIA",
+    "professor": "SEM PROFESSOR",
+    "matricula_professor": "N/A"
+  },
+  {
+    "turma": "AP401",
+    "dia": "Quinta",
+    "horario": "13:50 as 14:40",
+    "disciplina": "MATEMÁTICA",
+    "professor": "WILLYAN",
+    "matricula_professor": "51647273/1"
+  },
+  {
+    "turma": "AP401",
+    "dia": "Sexta",
+    "horario": "13:50 as 14:40",
+    "disciplina": "TECNOLOGIA E INOVAÇÃO",
+    "professor": "SEM PROFESSOR",
+    "matricula_professor": "N/A"
+  },
+  {
+    "turma": "AP401",
+    "dia": "Segunda",
+    "horario": "14:55 as 15:45",
+    "disciplina": "CF LÍNGUA PORTUGUESA",
+    "professor": "CLÉA",
+    "matricula_professor": "50722379/3"
+  },
+  {
+    "turma": "AP401",
+    "dia": "Terca",
+    "horario": "14:55 as 15:45",
+    "disciplina": "GEOGRAFIA",
+    "professor": "SEM PROFESSOR",
+    "matricula_professor": "N/A"
+  },
+  {
+    "turma": "AP401",
+    "dia": "Quarta",
+    "horario": "14:55 as 15:45",
+    "disciplina": "LÍNGUA ESTRANGEIRA - INGLÊS",
+    "professor": "SEM PROFESSOR",
+    "matricula_professor": "N/A"
+  },
+  {
+    "turma": "AP401",
+    "dia": "Quinta",
+    "horario": "14:55 as 15:45",
+    "disciplina": "MATEMÁTICA",
+    "professor": "WILLYAN",
+    "matricula_professor": "51647273/1"
+  },
+  {
+    "turma": "AP401",
+    "dia": "Sexta",
+    "horario": "14:55 as 15:45",
+    "disciplina": "MATEMÁTICA",
+    "professor": "WILLYAN",
+    "matricula_professor": "51647273/1"
+  },
+  {
+    "turma": "AP401",
+    "dia": "Segunda",
+    "horario": "15:45 as 16:35",
+    "disciplina": "CF LÍNGUA PORTUGUESA",
+    "professor": "CLÉA",
+    "matricula_professor": "50722379/3"
+  },
+  {
+    "turma": "AP401",
+    "dia": "Terca",
+    "horario": "15:45 as 16:35",
+    "disciplina": "GEOGRAFIA",
+    "professor": "SEM PROFESSOR",
+    "matricula_professor": "N/A"
+  },
+  {
+    "turma": "AP401",
+    "dia": "Quarta",
+    "horario": "15:45 as 16:35",
+    "disciplina": "LÍNGUA ESTRANGEIRA - INGLÊS",
+    "professor": "SEM PROFESSOR",
+    "matricula_professor": "N/A"
+  },
+  {
+    "turma": "AP401",
+    "dia": "Quinta",
+    "horario": "15:45 as 16:35",
+    "disciplina": "MATEMÁTICA",
+    "professor": "WILLYAN",
+    "matricula_professor": "51647273/1"
+  },
+  {
+    "turma": "AP401",
+    "dia": "Sexta",
+    "horario": "15:45 as 16:35",
+    "disciplina": "MATEMÁTICA",
+    "professor": "WILLYAN",
+    "matricula_professor": "51647273/1"
+  },
+  {
+    "turma": "AP401",
+    "dia": "Segunda",
+    "horario": "16:35 as 17:25",
+    "disciplina": "CF LÍNGUA PORTUGUESA",
+    "professor": "CLÉA",
+    "matricula_professor": "50722379/3"
+  },
+  {
+    "turma": "AP401",
+    "dia": "Terca",
+    "horario": "16:35 as 17:25",
+    "disciplina": "EDUCAÇÃO FÍSICA",
     "professor": "ALEXANDRE",
     "matricula_professor": "09516212"
   },
   {
-    "turma": "AP301",
-    "dia": "Quinta",
-    "horario": "13:00 as 13:50",
-    "disciplina": "MATEMÁTICA",
-    "professor": "WILLYAN",
-    "matricula_professor": "51647273/1"
-  },
-  {
-    "turma": "AP301",
-    "dia": "Sexta",
-    "horario": "13:00 as 13:50",
-    "disciplina": "CIÊNCIAS",
-    "professor": "ORIEL",
-    "matricula_professor": "51653559/1"
-  },
-  {
-    "turma": "AP301",
-    "dia": "Segunda",
-    "horario": "13:50 as 14:40",
-    "disciplina": "ARTE",
-    "professor": "CLÉA",
-    "matricula_professor": "50722379/3"
-  },
-  {
-    "turma": "AP301",
-    "dia": "Terca",
-    "horario": "13:50 as 14:40",
-    "disciplina": "CF HISTÓRIA",
+    "turma": "AP401",
+    "dia": "Quarta",
+    "horario": "16:35 as 17:25",
+    "disciplina": "PROJETO DE VIDA",
     "professor": "EDUARDO",
     "matricula_professor": "30561252"
   },
   {
-    "turma": "AP301",
-    "dia": "Quarta",
-    "horario": "13:50 as 14:40",
-    "disciplina": "CF EDUCAÇÃO FÍSICA",
+    "turma": "AP401",
+    "dia": "Quinta",
+    "horario": "16:35 as 17:25",
+    "disciplina": "GEOGRAFIA",
+    "professor": "SEM PROFESSOR",
+    "matricula_professor": "N/A"
+  },
+  {
+    "turma": "AP401",
+    "dia": "Sexta",
+    "horario": "16:35 as 17:25",
+    "disciplina": "CF LÍNGUA PORTUGUESA",
+    "professor": "CLÉA",
+    "matricula_professor": "50722379/3"
+  },
+  {
+    "turma": "AP401",
+    "dia": "Segunda",
+    "horario": "17:25 as 18:15",
+    "disciplina": "CF LÍNGUA PORTUGUESA",
+    "professor": "CLÉA",
+    "matricula_professor": "50722379/3"
+  },
+  {
+    "turma": "AP401",
+    "dia": "Terca",
+    "horario": "17:25 as 18:15",
+    "disciplina": "EDUCAÇÃO FÍSICA",
     "professor": "ALEXANDRE",
     "matricula_professor": "09516212"
   },
   {
-    "turma": "AP301",
-    "dia": "Quinta",
-    "horario": "13:50 as 14:40",
-    "disciplina": "MATEMÁTICA",
-    "professor": "WILLYAN",
-    "matricula_professor": "51647273/1"
-  },
-  {
-    "turma": "AP301",
-    "dia": "Sexta",
-    "horario": "13:50 as 14:40",
-    "disciplina": "CIÊNCIAS",
-    "professor": "ORIEL",
-    "matricula_professor": "51653559/1"
-  },
-  {
-    "turma": "AP301",
-    "dia": "Segunda",
-    "horario": "14:55 as 15:45",
-    "disciplina": "LÍNGUA PORTUGUESA",
-    "professor": "CLÉA",
-    "matricula_professor": "50722379/3"
-  },
-  {
-    "turma": "AP301",
-    "dia": "Terca",
-    "horario": "14:55 as 15:45",
-    "disciplina": "CF HISTÓRIA",
+    "turma": "AP401",
+    "dia": "Quarta",
+    "horario": "17:25 as 18:15",
+    "disciplina": "PROJETO DE VIDA",
     "professor": "EDUARDO",
     "matricula_professor": "30561252"
   },
   {
-    "turma": "AP301",
-    "dia": "Quarta",
-    "horario": "14:55 as 15:45",
-    "disciplina": "CIÊNCIAS",
-    "professor": "ORIEL",
-    "matricula_professor": "51653559/1"
-  },
-  {
-    "turma": "AP301",
-    "dia": "Quinta",
-    "horario": "14:55 as 15:45",
-    "disciplina": "MATEMÁTICA",
-    "professor": "WILLYAN",
-    "matricula_professor": "51647273/1"
-  },
-  {
-    "turma": "AP301",
-    "dia": "Sexta",
-    "horario": "14:55 as 15:45",
-    "disciplina": "MATEMÁTICA",
-    "professor": "WILLYAN",
-    "matricula_professor": "51647273/1"
-  },
-  {
-    "turma": "AP301",
-    "dia": "Segunda",
-    "horario": "15:45 as 16:35",
-    "disciplina": "LÍNGUA PORTUGUESA",
-    "professor": "CLÉA",
-    "matricula_professor": "50722379/3"
-  },
-  {
-    "turma": "AP301",
-    "dia": "Terca",
-    "horario": "15:45 as 16:35",
-    "disciplina": "CF HISTÓRIA",
-    "professor": "EDUARDO",
-    "matricula_professor": "30561252"
-  },
-  {
-    "turma": "AP301",
-    "dia": "Quarta",
-    "horario": "15:45 as 16:35",
-    "disciplina": "CIÊNCIAS",
-    "professor": "ORIEL",
-    "matricula_professor": "51653559/1"
-  },
-  {
-    "turma": "AP301",
-    "dia": "Quinta",
-    "horario": "15:45 as 16:35",
-    "disciplina": "MATEMÁTICA",
-    "professor": "WILLYAN",
-    "matricula_professor": "51647273/1"
-  },
-  {
-    "turma": "AP301",
-    "dia": "Sexta",
-    "horario": "15:45 as 16:35",
-    "disciplina": "MATEMÁTICA",
-    "professor": "WILLYAN",
-    "matricula_professor": "51647273/1"
-  },
-  {
-    "turma": "AP301",
-    "dia": "Segunda",
-    "horario": "16:35 as 17:25",
-    "disciplina": "LÍNGUA PORTUGUESA",
-    "professor": "CLÉA",
-    "matricula_professor": "50722379/3"
-  },
-  {
-    "turma": "AP301",
-    "dia": "Quarta",
-    "horario": "16:35 as 17:25",
-    "disciplina": "CIÊNCIAS",
-    "professor": "ORIEL",
-    "matricula_professor": "51653559/1"
-  },
-  {
-    "turma": "AP301",
-    "dia": "Quinta",
-    "horario": "16:35 as 17:25",
-    "disciplina": "CF HISTÓRIA",
-    "professor": "EDUARDO",
-    "matricula_professor": "30561252"
-  },
-  {
-    "turma": "AP301",
-    "dia": "Sexta",
-    "horario": "16:35 as 17:25",
-    "disciplina": "LÍNGUA PORTUGUESA",
-    "professor": "CLÉA",
-    "matricula_professor": "50722379/3"
-  },
-  {
-    "turma": "AP301",
-    "dia": "Segunda",
-    "horario": "17:25 as 18:15",
-    "disciplina": "LÍNGUA PORTUGUESA",
-    "professor": "CLÉA",
-    "matricula_professor": "50722379/3"
-  },
-  {
-    "turma": "AP301",
-    "dia": "Quarta",
-    "horario": "17:25 as 18:15",
-    "disciplina": "CIÊNCIAS",
-    "professor": "ORIEL",
-    "matricula_professor": "51653559/1"
-  },
-  {
-    "turma": "AP301",
+    "turma": "AP401",
     "dia": "Quinta",
     "horario": "17:25 as 18:15",
-    "disciplina": "CF HISTÓRIA",
-    "professor": "EDUARDO",
-    "matricula_professor": "30561252"
+    "disciplina": "GEOGRAFIA",
+    "professor": "SEM PROFESSOR",
+    "matricula_professor": "N/A"
   },
   {
-    "turma": "AP301",
+    "turma": "AP401",
     "dia": "Sexta",
     "horario": "17:25 as 18:15",
-    "disciplina": "LÍNGUA PORTUGUESA",
+    "disciplina": "CF LÍNGUA PORTUGUESA",
     "professor": "CLÉA",
     "matricula_professor": "50722379/3"
   },
@@ -4204,8 +4204,8 @@
     "dia": "Segunda",
     "horario": "18:20 as 19:10",
     "disciplina": "GEOGRAFIA",
-    "professor": "EDUARDO",
-    "matricula_professor": "30561252"
+    "professor": "ROBERTO",
+    "matricula_professor": "09610254"
   },
   {
     "turma": "EJA1",
@@ -4235,17 +4235,17 @@
     "turma": "EJA1",
     "dia": "Sexta",
     "horario": "18:20 as 19:10",
-    "disciplina": "ELETIVA 3",
-    "professor": "WILLYAN",
-    "matricula_professor": "51647273/1"
+    "disciplina": "LÍNGUA INGLESA",
+    "professor": "CELESTE",
+    "matricula_professor": "09613290"
   },
   {
     "turma": "EJA1",
     "dia": "Segunda",
     "horario": "19:10 as 20:00",
     "disciplina": "GEOGRAFIA",
-    "professor": "EDUARDO",
-    "matricula_professor": "30561252"
+    "professor": "ROBERTO",
+    "matricula_professor": "09610254"
   },
   {
     "turma": "EJA1",
@@ -4275,17 +4275,17 @@
     "turma": "EJA1",
     "dia": "Sexta",
     "horario": "19:10 as 20:00",
-    "disciplina": "ELETIVA 3",
-    "professor": "WILLYAN",
-    "matricula_professor": "51647273/1"
+    "disciplina": "LÍNGUA INGLESA",
+    "professor": "CELESTE",
+    "matricula_professor": "09613290"
   },
   {
     "turma": "EJA1",
     "dia": "Segunda",
     "horario": "20:00 as 20:50",
     "disciplina": "GEOGRAFIA",
-    "professor": "EDUARDO",
-    "matricula_professor": "30561252"
+    "professor": "ROBERTO",
+    "matricula_professor": "09610254"
   },
   {
     "turma": "EJA1",
@@ -4308,16 +4308,16 @@
     "dia": "Quinta",
     "horario": "20:00 as 20:50",
     "disciplina": "ELETIVA 2",
-    "professor": "PEDRO",
-    "matricula_professor": "51500400/1"
+    "professor": "SEM PROFESSOR",
+    "matricula_professor": "N/A"
   },
   {
     "turma": "EJA1",
     "dia": "Sexta",
     "horario": "20:00 as 20:50",
-    "disciplina": "LÍNGUA INGLESA",
-    "professor": "DOUGLAS",
-    "matricula_professor": "09112939"
+    "disciplina": "ELETIVA 3",
+    "professor": "WILLYAN",
+    "matricula_professor": "51647273/1"
   },
   {
     "turma": "EJA1",
@@ -4347,9 +4347,9 @@
     "turma": "EJA1",
     "dia": "Sexta",
     "horario": "20:50 as 21:40",
-    "disciplina": "LÍNGUA INGLESA",
-    "professor": "DOUGLAS",
-    "matricula_professor": "09112939"
+    "disciplina": "ELETIVA 3",
+    "professor": "WILLYAN",
+    "matricula_professor": "51647273/1"
   },
   {
     "turma": "EJA1",
@@ -4396,8 +4396,8 @@
     "dia": "Sexta",
     "horario": "18:20 as 19:10",
     "disciplina": "FÍSICA",
-    "professor": "ESMERALDA",
-    "matricula_professor": "09626193"
+    "professor": "TIAGO",
+    "matricula_professor": "09729708"
   },
   {
     "turma": "EJA2",
@@ -4436,8 +4436,8 @@
     "dia": "Sexta",
     "horario": "19:10 as 20:00",
     "disciplina": "FÍSICA",
-    "professor": "ESMERALDA",
-    "matricula_professor": "09626193"
+    "professor": "TIAGO",
+    "matricula_professor": "09729708"
   },
   {
     "turma": "EJA2",
@@ -4476,8 +4476,8 @@
     "dia": "Sexta",
     "horario": "20:00 as 20:50",
     "disciplina": "FÍSICA",
-    "professor": "ESMERALDA",
-    "matricula_professor": "09626193"
+    "professor": "TIAGO",
+    "matricula_professor": "09729708"
   },
   {
     "turma": "EJA2",
@@ -4508,8 +4508,8 @@
     "dia": "Quinta",
     "horario": "20:50 as 21:40",
     "disciplina": "ELETIVA 3/ COMPONENTE EPT",
-    "professor": "PEDRO",
-    "matricula_professor": "51500400/1"
+    "professor": "SEM PROFESSOR",
+    "matricula_professor": "N/A"
   },
   {
     "turma": "EJA2",
@@ -4540,8 +4540,8 @@
     "dia": "Quinta",
     "horario": "21:40 as 22:30",
     "disciplina": "ELETIVA 3/ COMPONENTE EPT",
-    "professor": "PEDRO",
-    "matricula_professor": "51500400/1"
+    "professor": "SEM PROFESSOR",
+    "matricula_professor": "N/A"
   },
   {
     "turma": "EJA2",
@@ -4556,117 +4556,37 @@
     "dia": "Terca",
     "horario": "18:20 as 19:10",
     "disciplina": "TECNOLOGIA E TRABALHO",
-    "professor": "EDUARDO",
-    "matricula_professor": "30561252"
+    "professor": "ROSANA",
+    "matricula_professor": "30467922"
   },
   {
     "turma": "EJA3",
     "dia": "Quinta",
     "horario": "18:20 as 19:10",
     "disciplina": "GEOGRAFIA",
-    "professor": "EDUARDO",
-    "matricula_professor": "30561252"
+    "professor": "ROBERTO",
+    "matricula_professor": "09610254"
   },
   {
     "turma": "EJA3",
     "dia": "Sexta",
     "horario": "18:20 as 19:10",
-    "disciplina": "LÍNGUA INGLESA",
-    "professor": "DOUGLAS",
-    "matricula_professor": "09112939"
-  },
-  {
-    "turma": "EJA3",
-    "dia": "Terca",
-    "horario": "19:10 as 20:00",
-    "disciplina": "ELETIVA 2",
-    "professor": "PEDRO",
-    "matricula_professor": "51500400/1"
-  },
-  {
-    "turma": "EJA3",
-    "dia": "Quarta",
-    "horario": "19:10 as 20:00",
-    "disciplina": "LÍNGUA PORTUGUESA/LITERATURA",
-    "professor": "JUCELIA",
-    "matricula_professor": "09679614"
-  },
-  {
-    "turma": "EJA3",
-    "dia": "Quinta",
-    "horario": "19:10 as 20:00",
-    "disciplina": "GEOGRAFIA",
-    "professor": "EDUARDO",
-    "matricula_professor": "30561252"
-  },
-  {
-    "turma": "EJA3",
-    "dia": "Sexta",
-    "horario": "19:10 as 20:00",
-    "disciplina": "LÍNGUA INGLESA",
-    "professor": "DOUGLAS",
-    "matricula_professor": "09112939"
-  },
-  {
-    "turma": "EJA3",
-    "dia": "Segunda",
-    "horario": "20:00 as 20:50",
-    "disciplina": "MATEMÁTICA",
-    "professor": "ERICKA",
-    "matricula_professor": "30655112"
-  },
-  {
-    "turma": "EJA3",
-    "dia": "Terca",
-    "horario": "20:00 as 20:50",
-    "disciplina": "MATEMÁTICA",
-    "professor": "ERICKA",
-    "matricula_professor": "30655112"
-  },
-  {
-    "turma": "EJA3",
-    "dia": "Quarta",
-    "horario": "20:00 as 20:50",
-    "disciplina": "HISTÓRIA",
-    "professor": "EDUARDO",
-    "matricula_professor": "30561252"
-  },
-  {
-    "turma": "EJA3",
-    "dia": "Quinta",
-    "horario": "20:00 as 20:50",
-    "disciplina": "GEOGRAFIA",
-    "professor": "EDUARDO",
-    "matricula_professor": "30561252"
-  },
-  {
-    "turma": "EJA3",
-    "dia": "Sexta",
-    "horario": "20:00 as 20:50",
     "disciplina": "PESQUISA, INOVAÇÃO E TECNOLOGIA",
     "professor": "PEDRO",
     "matricula_professor": "51500400/1"
   },
   {
     "turma": "EJA3",
-    "dia": "Segunda",
-    "horario": "20:50 as 21:40",
-    "disciplina": "SOCIOLOGIA",
-    "professor": "EDUARDO",
-    "matricula_professor": "30561252"
-  },
-  {
-    "turma": "EJA3",
     "dia": "Terca",
-    "horario": "20:50 as 21:40",
-    "disciplina": "ELETIVA 1",
-    "professor": "ERICKA",
-    "matricula_professor": "30655112"
+    "horario": "19:10 as 20:00",
+    "disciplina": "ELETIVA 2",
+    "professor": "SEM PROFESSOR",
+    "matricula_professor": "N/A"
   },
   {
     "turma": "EJA3",
     "dia": "Quarta",
-    "horario": "20:50 as 21:40",
+    "horario": "19:10 as 20:00",
     "disciplina": "LÍNGUA PORTUGUESA/LITERATURA",
     "professor": "JUCELIA",
     "matricula_professor": "09679614"
@@ -4674,15 +4594,15 @@
   {
     "turma": "EJA3",
     "dia": "Quinta",
-    "horario": "20:50 as 21:40",
-    "disciplina": "HISTÓRIA",
-    "professor": "EDUARDO",
-    "matricula_professor": "30561252"
+    "horario": "19:10 as 20:00",
+    "disciplina": "GEOGRAFIA",
+    "professor": "ROBERTO",
+    "matricula_professor": "09610254"
   },
   {
     "turma": "EJA3",
     "dia": "Sexta",
-    "horario": "20:50 as 21:40",
+    "horario": "19:10 as 20:00",
     "disciplina": "CONECTANDO INDIVÍDUO, SOCIEDADE E TECNOLOGIA",
     "professor": "PEDRO",
     "matricula_professor": "51500400/1"
@@ -4690,6 +4610,86 @@
   {
     "turma": "EJA3",
     "dia": "Segunda",
+    "horario": "20:00 as 20:50",
+    "disciplina": "MATEMÁTICA",
+    "professor": "ERICKA",
+    "matricula_professor": "30655112"
+  },
+  {
+    "turma": "EJA3",
+    "dia": "Terca",
+    "horario": "20:00 as 20:50",
+    "disciplina": "MATEMÁTICA",
+    "professor": "ERICKA",
+    "matricula_professor": "30655112"
+  },
+  {
+    "turma": "EJA3",
+    "dia": "Quarta",
+    "horario": "20:00 as 20:50",
+    "disciplina": "HISTÓRIA",
+    "professor": "EDUARDO",
+    "matricula_professor": "30561252"
+  },
+  {
+    "turma": "EJA3",
+    "dia": "Quinta",
+    "horario": "20:00 as 20:50",
+    "disciplina": "GEOGRAFIA",
+    "professor": "ROBERTO",
+    "matricula_professor": "09610254"
+  },
+  {
+    "turma": "EJA3",
+    "dia": "Sexta",
+    "horario": "20:00 as 20:50",
+    "disciplina": "LÍNGUA INGLESA",
+    "professor": "CELESTE",
+    "matricula_professor": "09613290"
+  },
+  {
+    "turma": "EJA3",
+    "dia": "Segunda",
+    "horario": "20:50 as 21:40",
+    "disciplina": "SOCIOLOGIA",
+    "professor": "EDUARDO",
+    "matricula_professor": "30561252"
+  },
+  {
+    "turma": "EJA3",
+    "dia": "Terca",
+    "horario": "20:50 as 21:40",
+    "disciplina": "MATEMÁTICA",
+    "professor": "ERICKA",
+    "matricula_professor": "30655112"
+  },
+  {
+    "turma": "EJA3",
+    "dia": "Quarta",
+    "horario": "20:50 as 21:40",
+    "disciplina": "LÍNGUA PORTUGUESA/LITERATURA",
+    "professor": "JUCELIA",
+    "matricula_professor": "09679614"
+  },
+  {
+    "turma": "EJA3",
+    "dia": "Quinta",
+    "horario": "20:50 as 21:40",
+    "disciplina": "HISTÓRIA",
+    "professor": "EDUARDO",
+    "matricula_professor": "30561252"
+  },
+  {
+    "turma": "EJA3",
+    "dia": "Sexta",
+    "horario": "20:50 as 21:40",
+    "disciplina": "LÍNGUA INGLESA",
+    "professor": "CELESTE",
+    "matricula_professor": "09613290"
+  },
+  {
+    "turma": "EJA3",
+    "dia": "Segunda",
     "horario": "21:40 as 22:30",
     "disciplina": "SOCIOLOGIA",
     "professor": "EDUARDO",
@@ -4699,7 +4699,7 @@
     "turma": "EJA3",
     "dia": "Terca",
     "horario": "21:40 as 22:30",
-    "disciplina": "MATEMÁTICA",
+    "disciplina": "ELETIVA 1",
     "professor": "ERICKA",
     "matricula_professor": "30655112"
   },
@@ -4740,8 +4740,8 @@
     "dia": "Quarta",
     "horario": "18:20 as 19:10",
     "disciplina": "FÍSICA",
-    "professor": "ESMERALDA",
-    "matricula_professor": "09626193"
+    "professor": "TIAGO",
+    "matricula_professor": "09729708"
   },
   {
     "turma": "EJA4",
@@ -4780,8 +4780,8 @@
     "dia": "Quarta",
     "horario": "19:10 as 20:00",
     "disciplina": "FÍSICA",
-    "professor": "ESMERALDA",
-    "matricula_professor": "09626193"
+    "professor": "TIAGO",
+    "matricula_professor": "09729708"
   },
   {
     "turma": "EJA4",
@@ -4825,6 +4825,14 @@
   },
   {
     "turma": "EJA4",
+    "dia": "Sexta",
+    "horario": "20:00 as 20:50",
+    "disciplina": "TECNOLOGIA E TRABALHO",
+    "professor": "PEDRO",
+    "matricula_professor": "51500400/1"
+  },
+  {
+    "turma": "EJA4",
     "dia": "Segunda",
     "horario": "20:50 as 21:40",
     "disciplina": "MATEMÁTICA",
@@ -4852,8 +4860,8 @@
     "dia": "Sexta",
     "horario": "20:50 as 21:40",
     "disciplina": "FÍSICA",
-    "professor": "ESMERALDA",
-    "matricula_professor": "09626193"
+    "professor": "TIAGO",
+    "matricula_professor": "09729708"
   },
   {
     "turma": "EJA4",
@@ -4880,111 +4888,103 @@
     "matricula_professor": "51441225/1"
   },
   {
-    "turma": "EJA4",
-    "dia": "Sexta",
-    "horario": "21:40 as 22:30",
-    "disciplina": "TECNOLOGIA E TRABALHO",
-    "professor": "PEDRO",
-    "matricula_professor": "51500400/1"
-  },
-  {
-    "turma": "REC02",
+    "turma": "SALARECSR02",
     "dia": "Segunda",
     "horario": "13:00 as 13:50",
     "disciplina": "ATENDIMENTO EDUCACIONAL ESPECIALIZADO",
-    "professor": "A DEFINIR",
+    "professor": "SEM PROFESSOR",
     "matricula_professor": "N/A"
   },
   {
-    "turma": "REC02",
+    "turma": "SALARECSR02",
     "dia": "Quinta",
     "horario": "13:00 as 13:50",
     "disciplina": "ATENDIMENTO EDUCACIONAL ESPECIALIZADO",
-    "professor": "A DEFINIR",
+    "professor": "SEM PROFESSOR",
     "matricula_professor": "N/A"
   },
   {
-    "turma": "REC02",
+    "turma": "SALARECSR02",
     "dia": "Segunda",
     "horario": "13:50 as 14:40",
     "disciplina": "ATENDIMENTO EDUCACIONAL ESPECIALIZADO",
-    "professor": "A DEFINIR",
+    "professor": "SEM PROFESSOR",
     "matricula_professor": "N/A"
   },
   {
-    "turma": "REC02",
+    "turma": "SALARECSR02",
     "dia": "Quinta",
     "horario": "13:50 as 14:40",
     "disciplina": "ATENDIMENTO EDUCACIONAL ESPECIALIZADO",
-    "professor": "A DEFINIR",
+    "professor": "SEM PROFESSOR",
     "matricula_professor": "N/A"
   },
   {
-    "turma": "REC02",
+    "turma": "SALARECSR02",
     "dia": "Segunda",
     "horario": "14:55 as 15:45",
     "disciplina": "ATENDIMENTO EDUCACIONAL ESPECIALIZADO",
-    "professor": "A DEFINIR",
+    "professor": "SEM PROFESSOR",
     "matricula_professor": "N/A"
   },
   {
-    "turma": "REC02",
+    "turma": "SALARECSR02",
     "dia": "Quinta",
     "horario": "14:55 as 15:45",
     "disciplina": "ATENDIMENTO EDUCACIONAL ESPECIALIZADO",
-    "professor": "A DEFINIR",
+    "professor": "SEM PROFESSOR",
     "matricula_professor": "N/A"
   },
   {
-    "turma": "REC02",
+    "turma": "SALARECSR02",
     "dia": "Segunda",
     "horario": "15:45 as 16:35",
     "disciplina": "ATENDIMENTO EDUCACIONAL ESPECIALIZADO",
-    "professor": "A DEFINIR",
+    "professor": "SEM PROFESSOR",
     "matricula_professor": "N/A"
   },
   {
-    "turma": "REC02",
+    "turma": "SALARECSR02",
     "dia": "Quinta",
     "horario": "15:45 as 16:35",
     "disciplina": "ATENDIMENTO EDUCACIONAL ESPECIALIZADO",
-    "professor": "A DEFINIR",
+    "professor": "SEM PROFESSOR",
     "matricula_professor": "N/A"
   },
   {
-    "turma": "REC02",
+    "turma": "SALARECSR02",
     "dia": "Segunda",
     "horario": "16:35 as 17:25",
     "disciplina": "ATENDIMENTO EDUCACIONAL ESPECIALIZADO",
-    "professor": "A DEFINIR",
+    "professor": "SEM PROFESSOR",
     "matricula_professor": "N/A"
   },
   {
-    "turma": "REC02",
+    "turma": "SALARECSR02",
     "dia": "Quinta",
     "horario": "16:35 as 17:25",
     "disciplina": "ATENDIMENTO EDUCACIONAL ESPECIALIZADO",
-    "professor": "A DEFINIR",
+    "professor": "SEM PROFESSOR",
     "matricula_professor": "N/A"
   },
   {
-    "turma": "REC02",
+    "turma": "SALARECSR02",
     "dia": "Segunda",
     "horario": "17:25 as 18:15",
     "disciplina": "ATENDIMENTO EDUCACIONAL ESPECIALIZADO",
-    "professor": "A DEFINIR",
+    "professor": "SEM PROFESSOR",
     "matricula_professor": "N/A"
   },
   {
-    "turma": "REC02",
+    "turma": "SALARECSR02",
     "dia": "Quinta",
     "horario": "17:25 as 18:15",
     "disciplina": "ATENDIMENTO EDUCACIONAL ESPECIALIZADO",
-    "professor": "A DEFINIR",
+    "professor": "SEM PROFESSOR",
     "matricula_professor": "N/A"
   },
   {
-    "turma": "REC03",
+    "turma": "SALARECSR03",
     "dia": "Segunda",
     "horario": "18:00 as 18:50",
     "disciplina": "ATENDIMENTO EDUCACIONAL ESPECIALIZADO",
@@ -4992,7 +4992,7 @@
     "matricula_professor": "09518556"
   },
   {
-    "turma": "REC03",
+    "turma": "SALARECSR03",
     "dia": "Sexta",
     "horario": "18:00 as 18:50",
     "disciplina": "ATENDIMENTO EDUCACIONAL ESPECIALIZADO",
@@ -5000,7 +5000,7 @@
     "matricula_professor": "09518556"
   },
   {
-    "turma": "REC03",
+    "turma": "SALARECSR03",
     "dia": "Segunda",
     "horario": "18:50 as 19:40",
     "disciplina": "ATENDIMENTO EDUCACIONAL ESPECIALIZADO",
@@ -5008,7 +5008,7 @@
     "matricula_professor": "09518556"
   },
   {
-    "turma": "REC03",
+    "turma": "SALARECSR03",
     "dia": "Sexta",
     "horario": "18:50 as 19:40",
     "disciplina": "ATENDIMENTO EDUCACIONAL ESPECIALIZADO",
@@ -5016,7 +5016,7 @@
     "matricula_professor": "09518556"
   },
   {
-    "turma": "REC03",
+    "turma": "SALARECSR03",
     "dia": "Segunda",
     "horario": "19:40 as 20:30",
     "disciplina": "ATENDIMENTO EDUCACIONAL ESPECIALIZADO",
@@ -5024,7 +5024,7 @@
     "matricula_professor": "09518556"
   },
   {
-    "turma": "REC03",
+    "turma": "SALARECSR03",
     "dia": "Sexta",
     "horario": "19:40 as 20:30",
     "disciplina": "ATENDIMENTO EDUCACIONAL ESPECIALIZADO",
@@ -5032,7 +5032,7 @@
     "matricula_professor": "09518556"
   },
   {
-    "turma": "REC03",
+    "turma": "SALARECSR03",
     "dia": "Segunda",
     "horario": "20:45 as 21:35",
     "disciplina": "ATENDIMENTO EDUCACIONAL ESPECIALIZADO",
@@ -5040,7 +5040,7 @@
     "matricula_professor": "09518556"
   },
   {
-    "turma": "REC03",
+    "turma": "SALARECSR03",
     "dia": "Sexta",
     "horario": "20:45 as 21:35",
     "disciplina": "ATENDIMENTO EDUCACIONAL ESPECIALIZADO",
@@ -5048,7 +5048,7 @@
     "matricula_professor": "09518556"
   },
   {
-    "turma": "REC03",
+    "turma": "SALARECSR03",
     "dia": "Segunda",
     "horario": "21:35 as 22:25",
     "disciplina": "ATENDIMENTO EDUCACIONAL ESPECIALIZADO",
@@ -5056,7 +5056,7 @@
     "matricula_professor": "09518556"
   },
   {
-    "turma": "REC03",
+    "turma": "SALARECSR03",
     "dia": "Sexta",
     "horario": "21:35 as 22:25",
     "disciplina": "ATENDIMENTO EDUCACIONAL ESPECIALIZADO",
@@ -5064,7 +5064,7 @@
     "matricula_professor": "09518556"
   },
   {
-    "turma": "REC03",
+    "turma": "SALARECSR03",
     "dia": "Segunda",
     "horario": "22:25 as 23:15",
     "disciplina": "ATENDIMENTO EDUCACIONAL ESPECIALIZADO",
@@ -5072,7 +5072,7 @@
     "matricula_professor": "09518556"
   },
   {
-    "turma": "REC03",
+    "turma": "SALARECSR03",
     "dia": "Sexta",
     "horario": "22:25 as 23:15",
     "disciplina": "ATENDIMENTO EDUCACIONAL ESPECIALIZADO",
