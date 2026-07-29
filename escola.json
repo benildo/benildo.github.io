@@ -1601,14 +1601,6 @@
   },
   {
     "turma": "801",
-    "dia": "Quarta",
-    "horario": "13:50 as 14:40",
-    "disciplina": "LETRAMENTO DIGITAL",
-    "professor": "BENILDO",
-    "matricula_professor": "51467771/1"
-  },
-  {
-    "turma": "801",
     "dia": "Quinta",
     "horario": "13:50 as 14:40",
     "disciplina": "ARTE",
@@ -1946,14 +1938,6 @@
   {
     "turma": "802",
     "dia": "Segunda",
-    "horario": "14:55 as 15:45",
-    "disciplina": "LETRAMENTO DIGITAL",
-    "professor": "BENILDO",
-    "matricula_professor": "51467771/1"
-  },
-  {
-    "turma": "802",
-    "dia": "Quarta",
     "horario": "14:55 as 15:45",
     "disciplina": "LETRAMENTO DIGITAL",
     "professor": "BENILDO",
