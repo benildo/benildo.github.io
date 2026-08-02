@@ -9,14 +9,6 @@
   },
   {
     "turma": "601",
-    "dia": "Terca",
-    "horario": "07:10 as 08:00",
-    "disciplina": "LETRAMENTO DIGITAL",
-    "professor": "STEPHANIE",
-    "matricula_professor": "09586041"
-  },
-  {
-    "turma": "601",
     "dia": "Quarta",
     "horario": "07:10 as 08:00",
     "disciplina": "CIÊNCIAS",
@@ -46,14 +38,6 @@
     "disciplina": "MATEMÁTICA",
     "professor": "IVAN",
     "matricula_professor": "09506221"
-  },
-  {
-    "turma": "601",
-    "dia": "Terca",
-    "horario": "08:00 as 08:50",
-    "disciplina": "LETRAMENTO DIGITAL",
-    "professor": "STEPHANIE",
-    "matricula_professor": "09586041"
   },
   {
     "turma": "601",
@@ -305,6 +289,14 @@
   },
   {
     "turma": "601",
+    "dia": "Quinta",
+    "horario": "13:50 as 14:40",
+    "disciplina": "LETRAMENTO DIGITAL",
+    "professor": "STEPHANIE",
+    "matricula_professor": "09586041"
+  },
+  {
+    "turma": "601",
     "dia": "Sexta",
     "horario": "13:50 as 14:40",
     "disciplina": "ARTE",
@@ -328,6 +320,14 @@
     "matricula_professor": "09654823"
   },
   {
+    "turma": "601",
+    "dia": "Quinta",
+    "horario": "14:55 as 15:45",
+    "disciplina": "LETRAMENTO DIGITAL",
+    "professor": "STEPHANIE",
+    "matricula_professor": "09586041"
+  },
+  {
     "turma": "602",
     "dia": "Segunda",
     "horario": "07:10 as 08:00",
@@ -1017,6 +1017,14 @@
   },
   {
     "turma": "702",
+    "dia": "Sexta",
+    "horario": "07:10 as 08:00",
+    "disciplina": "LETRAMENTO DIGITAL",
+    "professor": "STEPHANIE",
+    "matricula_professor": "09586041"
+  },
+  {
+    "turma": "702",
     "dia": "Segunda",
     "horario": "08:00 as 08:50",
     "disciplina": "PROJETO DE VIDA",
@@ -1049,11 +1057,11 @@
   },
   {
     "turma": "702",
-    "dia": "Segunda",
-    "horario": "09:05 as 09:55",
-    "disciplina": "LÍNGUA PORTUGUESA - INTERPRETAÇÃO E REDAÇÃO",
-    "professor": "SEM PROFESSOR",
-    "matricula_professor": "N/A"
+    "dia": "Sexta",
+    "horario": "08:00 as 08:50",
+    "disciplina": "LETRAMENTO DIGITAL",
+    "professor": "STEPHANIE",
+    "matricula_professor": "09586041"
   },
   {
     "turma": "702",
@@ -1086,14 +1094,6 @@
     "disciplina": "ARTE",
     "professor": "LUIZ",
     "matricula_professor": "31222110"
-  },
-  {
-    "turma": "702",
-    "dia": "Segunda",
-    "horario": "09:55 as 10:45",
-    "disciplina": "LÍNGUA PORTUGUESA - INTERPRETAÇÃO E REDAÇÃO",
-    "professor": "SEM PROFESSOR",
-    "matricula_professor": "N/A"
   },
   {
     "turma": "702",
@@ -1227,6 +1227,14 @@
     "turma": "702",
     "dia": "Quarta",
     "horario": "13:00 as 13:50",
+    "disciplina": "LÍNGUA PORTUGUESA - INTERPRETAÇÃO E REDAÇÃO",
+    "professor": "CELESTE",
+    "matricula_professor": "09613290"
+  },
+  {
+    "turma": "702",
+    "dia": "Quinta",
+    "horario": "13:00 as 13:50",
     "disciplina": "LETRAMENTO DIGITAL",
     "professor": "STEPHANIE",
     "matricula_professor": "09586041"
@@ -1259,9 +1267,9 @@
     "turma": "702",
     "dia": "Quarta",
     "horario": "13:50 as 14:40",
-    "disciplina": "LETRAMENTO DIGITAL",
-    "professor": "STEPHANIE",
-    "matricula_professor": "09586041"
+    "disciplina": "LÍNGUA PORTUGUESA - INTERPRETAÇÃO E REDAÇÃO",
+    "professor": "CELESTE",
+    "matricula_professor": "09613290"
   },
   {
     "turma": "702",
@@ -1294,14 +1302,6 @@
     "disciplina": "MATEMÁTICA",
     "professor": "MARCELA",
     "matricula_professor": "09404955"
-  },
-  {
-    "turma": "702",
-    "dia": "Quarta",
-    "horario": "14:55 as 15:45",
-    "disciplina": "LETRAMENTO DIGITAL",
-    "professor": "STEPHANIE",
-    "matricula_professor": "09586041"
   },
   {
     "turma": "702",
@@ -1428,8 +1428,8 @@
     "dia": "Sexta",
     "horario": "09:05 as 09:55",
     "disciplina": "CIÊNCIAS",
-    "professor": "SEM PROFESSOR",
-    "matricula_professor": "N/A"
+    "professor": "ORIEL",
+    "matricula_professor": "51653559/1"
   },
   {
     "turma": "801",
@@ -1468,8 +1468,8 @@
     "dia": "Sexta",
     "horario": "09:55 as 10:45",
     "disciplina": "CIÊNCIAS",
-    "professor": "SEM PROFESSOR",
-    "matricula_professor": "N/A"
+    "professor": "ORIEL",
+    "matricula_professor": "51653559/1"
   },
   {
     "turma": "801",
@@ -1478,14 +1478,6 @@
     "disciplina": "EXPRESSÕES ARTÍSTICAS",
     "professor": "LEONARDO",
     "matricula_professor": "09289083"
-  },
-  {
-    "turma": "801",
-    "dia": "Terca",
-    "horario": "10:45 as 11:35",
-    "disciplina": "CIÊNCIAS",
-    "professor": "SEM PROFESSOR",
-    "matricula_professor": "N/A"
   },
   {
     "turma": "801",
@@ -1518,14 +1510,6 @@
     "disciplina": "EXPRESSÕES ARTÍSTICAS",
     "professor": "LEONARDO",
     "matricula_professor": "09289083"
-  },
-  {
-    "turma": "801",
-    "dia": "Terca",
-    "horario": "11:35 as 12:25",
-    "disciplina": "CIÊNCIAS",
-    "professor": "SEM PROFESSOR",
-    "matricula_professor": "N/A"
   },
   {
     "turma": "801",
@@ -1617,6 +1601,14 @@
   },
   {
     "turma": "801",
+    "dia": "Segunda",
+    "horario": "14:55 as 15:45",
+    "disciplina": "CIÊNCIAS",
+    "professor": "ORIEL",
+    "matricula_professor": "51653559/1"
+  },
+  {
+    "turma": "801",
     "dia": "Terca",
     "horario": "14:55 as 15:45",
     "disciplina": "HISTÓRIA",
@@ -1625,19 +1617,19 @@
   },
   {
     "turma": "801",
+    "dia": "Quarta",
+    "horario": "14:55 as 15:45",
+    "disciplina": "CIÊNCIAS",
+    "professor": "ORIEL",
+    "matricula_professor": "51653559/1"
+  },
+  {
+    "turma": "801",
     "dia": "Sexta",
     "horario": "14:55 as 15:45",
     "disciplina": "LETRAMENTO DIGITAL",
     "professor": "BENILDO",
     "matricula_professor": "51467771/1"
-  },
-  {
-    "turma": "802",
-    "dia": "Segunda",
-    "horario": "07:10 as 08:00",
-    "disciplina": "LÍNGUA PORTUGUESA - INTERPRETAÇÃO E REDAÇÃO",
-    "professor": "SEM PROFESSOR",
-    "matricula_professor": "N/A"
   },
   {
     "turma": "802",
@@ -1675,9 +1667,9 @@
     "turma": "802",
     "dia": "Segunda",
     "horario": "08:00 as 08:50",
-    "disciplina": "LÍNGUA PORTUGUESA - INTERPRETAÇÃO E REDAÇÃO",
-    "professor": "SEM PROFESSOR",
-    "matricula_professor": "N/A"
+    "disciplina": "LÍNGUA INGLESA",
+    "professor": "CELESTE",
+    "matricula_professor": "09613290"
   },
   {
     "turma": "802",
@@ -1726,6 +1718,14 @@
     "disciplina": "LÍNGUA PORTUGUESA",
     "professor": "TANIA",
     "matricula_professor": "51448491/2"
+  },
+  {
+    "turma": "802",
+    "dia": "Quarta",
+    "horario": "09:05 as 09:55",
+    "disciplina": "LÍNGUA PORTUGUESA - INTERPRETAÇÃO E REDAÇÃO",
+    "professor": "CELESTE",
+    "matricula_professor": "09613290"
   },
   {
     "turma": "802",
@@ -1763,9 +1763,9 @@
     "turma": "802",
     "dia": "Quarta",
     "horario": "09:55 as 10:45",
-    "disciplina": "ARTE",
-    "professor": "SEM PROFESSOR",
-    "matricula_professor": "N/A"
+    "disciplina": "LÍNGUA PORTUGUESA - INTERPRETAÇÃO E REDAÇÃO",
+    "professor": "CELESTE",
+    "matricula_professor": "09613290"
   },
   {
     "turma": "802",
@@ -1881,19 +1881,11 @@
   },
   {
     "turma": "802",
-    "dia": "Quarta",
+    "dia": "Quinta",
     "horario": "13:00 as 13:50",
     "disciplina": "ARTE",
     "professor": "SEM PROFESSOR",
     "matricula_professor": "N/A"
-  },
-  {
-    "turma": "802",
-    "dia": "Quinta",
-    "horario": "13:00 as 13:50",
-    "disciplina": "LÍNGUA INGLESA",
-    "professor": "CELESTE",
-    "matricula_professor": "09613290"
   },
   {
     "turma": "802",
@@ -1929,6 +1921,14 @@
   },
   {
     "turma": "802",
+    "dia": "Quinta",
+    "horario": "13:50 as 14:40",
+    "disciplina": "ARTE",
+    "professor": "SEM PROFESSOR",
+    "matricula_professor": "N/A"
+  },
+  {
+    "turma": "802",
     "dia": "Sexta",
     "horario": "13:50 as 14:40",
     "disciplina": "HISTÓRIA",
@@ -1938,6 +1938,14 @@
   {
     "turma": "802",
     "dia": "Segunda",
+    "horario": "14:55 as 15:45",
+    "disciplina": "LETRAMENTO DIGITAL",
+    "professor": "BENILDO",
+    "matricula_professor": "51467771/1"
+  },
+  {
+    "turma": "802",
+    "dia": "Quarta",
     "horario": "14:55 as 15:45",
     "disciplina": "LETRAMENTO DIGITAL",
     "professor": "BENILDO",
@@ -2180,8 +2188,8 @@
     "dia": "Terca",
     "horario": "13:00 as 13:50",
     "disciplina": "LÍNGUA PORTUGUESA - INTERPRETAÇÃO E REDAÇÃO",
-    "professor": "SEM PROFESSOR",
-    "matricula_professor": "N/A"
+    "professor": "STEPHANIE",
+    "matricula_professor": "09586041"
   },
   {
     "turma": "901",
@@ -2220,8 +2228,8 @@
     "dia": "Terca",
     "horario": "13:50 as 14:40",
     "disciplina": "LÍNGUA PORTUGUESA - INTERPRETAÇÃO E REDAÇÃO",
-    "professor": "SEM PROFESSOR",
-    "matricula_professor": "N/A"
+    "professor": "STEPHANIE",
+    "matricula_professor": "09586041"
   },
   {
     "turma": "901",
@@ -2377,14 +2385,6 @@
   },
   {
     "turma": "1001",
-    "dia": "Quinta",
-    "horario": "09:05 as 09:55",
-    "disciplina": "SOCIOLOGIA APLICADA",
-    "professor": "GUILHERME",
-    "matricula_professor": "08403628"
-  },
-  {
-    "turma": "1001",
     "dia": "Sexta",
     "horario": "09:05 as 09:55",
     "disciplina": "MATEMÁTICA",
@@ -2406,14 +2406,6 @@
     "disciplina": "LÍNGUA PORTUGUESA/LITERATURA",
     "professor": "RAQUEL",
     "matricula_professor": "09282179"
-  },
-  {
-    "turma": "1001",
-    "dia": "Quinta",
-    "horario": "09:55 as 10:45",
-    "disciplina": "SOCIOLOGIA APLICADA",
-    "professor": "GUILHERME",
-    "matricula_professor": "08403628"
   },
   {
     "turma": "1001",
@@ -2601,6 +2593,14 @@
   },
   {
     "turma": "1001",
+    "dia": "Quarta",
+    "horario": "14:55 as 15:45",
+    "disciplina": "SOCIOLOGIA APLICADA",
+    "professor": "GUILHERME",
+    "matricula_professor": "08403628"
+  },
+  {
+    "turma": "1001",
     "dia": "Quinta",
     "horario": "14:55 as 15:45",
     "disciplina": "LINGUAGENS APLICADAS ÀS TECNOLOGIAS",
@@ -2630,6 +2630,14 @@
     "disciplina": "BIOLOGIA",
     "professor": "FELIPPE",
     "matricula_professor": "09709023"
+  },
+  {
+    "turma": "1001",
+    "dia": "Quarta",
+    "horario": "15:45 as 16:35",
+    "disciplina": "SOCIOLOGIA APLICADA",
+    "professor": "GUILHERME",
+    "matricula_professor": "08403628"
   },
   {
     "turma": "1001",
@@ -2798,6 +2806,14 @@
     "disciplina": "TECNOLOGIA, INOVAÇÃO E AMBIENTE",
     "professor": "BENILDO",
     "matricula_professor": "51467771/1"
+  },
+  {
+    "turma": "1002",
+    "dia": "Terca",
+    "horario": "10:45 as 11:35",
+    "disciplina": "ELETIVA 2",
+    "professor": "GISELI",
+    "matricula_professor": "09753443"
   },
   {
     "turma": "1002",
@@ -2881,6 +2897,14 @@
   },
   {
     "turma": "1002",
+    "dia": "Quarta",
+    "horario": "13:00 as 13:50",
+    "disciplina": "SOCIOLOGIA APLICADA",
+    "professor": "GUILHERME",
+    "matricula_professor": "08403628"
+  },
+  {
+    "turma": "1002",
     "dia": "Quinta",
     "horario": "13:00 as 13:50",
     "disciplina": "PRÁTICAS ESPORTIVAS",
@@ -2915,9 +2939,9 @@
     "turma": "1002",
     "dia": "Quarta",
     "horario": "13:50 as 14:40",
-    "disciplina": "ELETIVA 2",
-    "professor": "GISELI",
-    "matricula_professor": "09753443"
+    "disciplina": "SOCIOLOGIA APLICADA",
+    "professor": "GUILHERME",
+    "matricula_professor": "08403628"
   },
   {
     "turma": "1002",
@@ -2934,14 +2958,6 @@
     "disciplina": "MATEMÁTICA APLICADA",
     "professor": "FRANCISCO",
     "matricula_professor": "09218199"
-  },
-  {
-    "turma": "1002",
-    "dia": "Segunda",
-    "horario": "14:55 as 15:45",
-    "disciplina": "SOCIOLOGIA APLICADA",
-    "professor": "GUILHERME",
-    "matricula_professor": "08403628"
   },
   {
     "turma": "1002",
@@ -2974,14 +2990,6 @@
     "disciplina": "FÍSICA",
     "professor": "SEM PROFESSOR",
     "matricula_professor": "N/A"
-  },
-  {
-    "turma": "1002",
-    "dia": "Segunda",
-    "horario": "15:45 as 16:35",
-    "disciplina": "SOCIOLOGIA APLICADA",
-    "professor": "GUILHERME",
-    "matricula_professor": "08403628"
   },
   {
     "turma": "1002",
@@ -3633,7 +3641,7 @@
   },
   {
     "turma": "3001",
-    "dia": "Terca",
+    "dia": "Quarta",
     "horario": "13:00 as 13:50",
     "disciplina": "GEOGRAFIA",
     "professor": "GISELI",
@@ -3665,7 +3673,7 @@
   },
   {
     "turma": "3001",
-    "dia": "Terca",
+    "dia": "Quarta",
     "horario": "13:50 as 14:40",
     "disciplina": "GEOGRAFIA",
     "professor": "GISELI",
@@ -3777,14 +3785,6 @@
   },
   {
     "turma": "AP201",
-    "dia": "Quinta",
-    "horario": "07:10 as 08:00",
-    "disciplina": "LÍNGUA ESTRANGEIRA - INGLÊS",
-    "professor": "SEM PROFESSOR",
-    "matricula_professor": "N/A"
-  },
-  {
-    "turma": "AP201",
     "dia": "Sexta",
     "horario": "07:10 as 08:00",
     "disciplina": "LÍNGUA PORTUGUESA",
@@ -3814,14 +3814,6 @@
     "disciplina": "CF GEOGRAFIA",
     "professor": "NILCELENE",
     "matricula_professor": "30514418"
-  },
-  {
-    "turma": "AP201",
-    "dia": "Quinta",
-    "horario": "08:00 as 08:50",
-    "disciplina": "LÍNGUA ESTRANGEIRA - INGLÊS",
-    "professor": "SEM PROFESSOR",
-    "matricula_professor": "N/A"
   },
   {
     "turma": "AP201",
@@ -3921,6 +3913,14 @@
   },
   {
     "turma": "AP201",
+    "dia": "Quarta",
+    "horario": "10:45 as 11:35",
+    "disciplina": "LÍNGUA ESTRANGEIRA - INGLÊS",
+    "professor": "CELESTE",
+    "matricula_professor": "09613290"
+  },
+  {
+    "turma": "AP201",
     "dia": "Quinta",
     "horario": "10:45 as 11:35",
     "disciplina": "MATEMÁTICA",
@@ -3945,6 +3945,14 @@
   },
   {
     "turma": "AP201",
+    "dia": "Quarta",
+    "horario": "11:35 as 12:25",
+    "disciplina": "LÍNGUA ESTRANGEIRA - INGLÊS",
+    "professor": "CELESTE",
+    "matricula_professor": "09613290"
+  },
+  {
+    "turma": "AP201",
     "dia": "Quinta",
     "horario": "11:35 as 12:25",
     "disciplina": "MATEMÁTICA",
@@ -3977,19 +3985,19 @@
   },
   {
     "turma": "AP401",
-    "dia": "Quarta",
+    "dia": "Quinta",
     "horario": "13:00 as 13:50",
     "disciplina": "LÍNGUA ESTRANGEIRA - INGLÊS",
-    "professor": "SEM PROFESSOR",
-    "matricula_professor": "N/A"
+    "professor": "CELESTE",
+    "matricula_professor": "09613290"
   },
   {
     "turma": "AP401",
     "dia": "Sexta",
     "horario": "13:00 as 13:50",
     "disciplina": "TECNOLOGIA E INOVAÇÃO",
-    "professor": "SEM PROFESSOR",
-    "matricula_professor": "N/A"
+    "professor": "ORIEL",
+    "matricula_professor": "51653559/1"
   },
   {
     "turma": "AP401",
@@ -4009,19 +4017,19 @@
   },
   {
     "turma": "AP401",
-    "dia": "Quarta",
+    "dia": "Quinta",
     "horario": "13:50 as 14:40",
     "disciplina": "LÍNGUA ESTRANGEIRA - INGLÊS",
-    "professor": "SEM PROFESSOR",
-    "matricula_professor": "N/A"
+    "professor": "CELESTE",
+    "matricula_professor": "09613290"
   },
   {
     "turma": "AP401",
     "dia": "Sexta",
     "horario": "13:50 as 14:40",
     "disciplina": "TECNOLOGIA E INOVAÇÃO",
-    "professor": "SEM PROFESSOR",
-    "matricula_professor": "N/A"
+    "professor": "ORIEL",
+    "matricula_professor": "51653559/1"
   },
   {
     "turma": "AP401",
