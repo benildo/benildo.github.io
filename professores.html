@@ -82,6 +82,20 @@
     let bdHorarios = [];
     let horariosFiltradosAtuais = []; 
 
+    // Lista de disciplinas que disputam/dividem o uso dos Chromebooks
+    const DISCIPLINAS_CHROMEBOOK = [
+        "LETRAMENTO DIGITAL",
+        "TECNOLOGIA E INOVAÇÃO",
+        "TECNOLOGIA E TRABALHO",
+        "PESQUISA, INOVAÇÃO E TECNOLOGIA",
+        "CONECTANDO INDIVÍDUO, SOCIEDADE E TECNOLOGIA",
+        "TECNOLOGIA, INOVAÇÃO E AMBIENTE",
+        "LINGUAGENS APLICADAS ÀS TECNOLOGIAS"
+    ];
+
+    // Mapeamento global de conflitos: chave "DIA|HORARIO" -> quantidade de uso dos Chromebooks
+    let mapaConflitosChromebook = {};
+
     window.addEventListener('DOMContentLoaded', async () => {
         const statusFnt = document.getElementById('status');
         const selectProf = document.getElementById('selectProfessor');
@@ -95,6 +109,9 @@
             statusFnt.color = "lime";
             statusFnt.innerText = `[ READY ] ${bdHorarios.length} REGISTROS DE HORARIOS CARREGADOS!`;
             
+            // Mapeia onde há choque de horários dos Chromebooks em toda a escola
+            mapearConflitosChromebook();
+
             popularSelect(bdHorarios);
             selectProf.disabled = false;
 
@@ -103,6 +120,28 @@
             statusFnt.innerText = `[ ERROR ] FALHA NO LINK DATA: ${error.message}`;
         }
     });
+
+    // Mapeia quantas aulas de tecnologia acontecem simultaneamente por Dia + Horário
+    function mapearConflitosChromebook() {
+        mapaConflitosChromebook = {};
+
+        bdHorarios.forEach(item => {
+            if (!item.disciplina || !item.dia || !item.horario) return;
+
+            const discUpper = item.disciplina.toUpperCase().trim();
+
+            // Verifica se a disciplina da aula pertence à lista de Chromebooks
+            const usaChromebook = DISCIPLINAS_CHROMEBOOK.some(d => discUpper.includes(d));
+
+            if (usaChromebook) {
+                const diaNorm = normalizarDia(item.dia);
+                const horaNorm = item.horario.trim();
+                const chave = `${diaNorm}|${horaNorm}`;
+
+                mapaConflitosChromebook[chave] = (mapaConflitosChromebook[chave] || 0) + 1;
+            }
+        });
+    }
 
     function popularSelect(dados) {
         const selectProf = document.getElementById('selectProfessor');
@@ -185,12 +224,11 @@
         ordenarERenderizar('dia');
     });
 
-    // Função normalizadora para higienizar strings de dias da semana (remove acentos, espaços extras e "-feira")
     function normalizarDia(diaStr) {
         if (!diaStr) return "";
         return diaStr.toLowerCase()
-                     .normalize("NFD").replace(/[\u0300-\u036f]/g, "") // Remove acentos (Ex: terça vira terca)
-                     .replace("-feira", "")                           // Remove sufixo se houver
+                     .normalize("NFD").replace(/[\u0300-\u036f]/g, "")
+                     .replace("-feira", "")
                      .trim();
     }
 
@@ -198,7 +236,6 @@
         const container = document.getElementById('resultado');
         if (horariosFiltradosAtuais.length === 0) return;
 
-        // Mapeamento normalizado e blindado contra erros de grafia
         const pesosDias = {
             "segunda": 1,
             "terca": 2,
@@ -213,34 +250,26 @@
             horariosFiltradosAtuais.sort((a, b) => {
                 const diaA = normalizarDia(a.dia);
                 const diaB = normalizarDia(b.dia);
-                
                 const pesoA = pesosDias[diaA] || 99;
                 const pesoB = pesosDias[diaB] || 99;
 
-                // 1º critério: Ordem cronológica dos dias
                 if (pesoA !== pesoB) return pesoA - pesoB;
-                
-                // 2º critério (Desempate): Horário de entrada da aula (mais cedo primeiro)
                 return a.horario.trim().localeCompare(b.horario.trim(), undefined, { numeric: true, sensitivity: 'base' });
             });
         } else if (criterio === 'turma') {
             horariosFiltradosAtuais.sort((a, b) => {
-                // 1º critério: Ordem alfabética da Turma
                 if (a.turma !== b.turma) return a.turma.localeCompare(b.turma);
                 
-                // 2º critério: Ordem dos dias da semana dentro da mesma turma
                 const diaA = normalizarDia(a.dia);
                 const diaB = normalizarDia(b.dia);
                 const pesoA = pesosDias[diaA] || 99;
                 const pesoB = pesosDias[diaB] || 99;
                 if (pesoA !== pesoB) return pesoA - pesoB;
 
-                // 3º critério: Horário mais cedo dentro do mesmo dia daquela turma
                 return a.horario.trim().localeCompare(b.horario.trim(), undefined, { numeric: true, sensitivity: 'base' });
             });
         }
 
-        // Renderização da tabela permanece no seu design original
         let tabelaHtml = `
             <center>
                 <h2>Grade Encontrada: ${horariosFiltradosAtuais[0].professor} (${horariosFiltradosAtuais.length} Tempos)</h2>
@@ -265,12 +294,26 @@
         `;
 
         horariosFiltradosAtuais.forEach(item => {
+            const discUpper = item.disciplina ? item.disciplina.toUpperCase().trim() : "";
+            const usaChromebook = DISCIPLINAS_CHROMEBOOK.some(d => discUpper.includes(d));
+            
+            const diaNorm = normalizarDia(item.dia);
+            const horaNorm = item.horario.trim();
+            const chave = `${diaNorm}|${horaNorm}`;
+
+            // Verifica se há 2 ou mais turmas usand Chromebooks simultaneamente nesse horário
+            const temConflito = usaChromebook && (mapaConflitosChromebook[chave] > 1);
+
+            // Cor da fonte: Amarelo se houver conflito de divisão, Verde (padrão) caso contrário
+            const corFonte = temConflito ? "yellow" : "lime";
+            const avisoConflito = temConflito ? ' <span style="font-size: 11px; color: yellow;">⚠️</span>' : '';
+
             tabelaHtml += `
                 <tr>
-                    <td><b>${item.dia}</b></td>
-                    <td>${item.horario}</td>
-                    <td><font color="cyan">${item.turma}</font></td>
-                    <td>${item.disciplina}</td>
+                    <td><font color="${corFonte}"><b>${item.dia}</b></font></td>
+                    <td><font color="${corFonte}">${item.horario}</font></td>
+                    <td><font color="${temConflito ? 'yellow' : 'cyan'}">${item.turma}</font></td>
+                    <td><font color="${corFonte}">${item.disciplina}${avisoConflito}</font></td>
                 </tr>
             `;
         });
