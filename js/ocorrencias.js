@@ -402,7 +402,7 @@ function confirmarExclusao(id) {
     <button type="button" style="background:#444;" onclick="fecharModal()">Cancelar</button>
     <button type="button" style="background:var(--error);" onclick="executarExclusao('${id}')">Sim, Apagar</button>
   `;
-  abrirModal('Excluir Ocorrência', 'Tem certeza de que deseja apagar esta ocorrência da planilha?', acoesHtml);
+  abrirModal('Excluir Ocorrência', 'Tem certeza de que deseja apagar esta ocorrência?', acoesHtml);
 }
 
 async function executarExclusao(id) {
